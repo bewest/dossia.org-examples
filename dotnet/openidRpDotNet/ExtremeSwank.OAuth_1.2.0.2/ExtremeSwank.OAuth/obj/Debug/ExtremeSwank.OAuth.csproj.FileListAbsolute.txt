@@ -1,0 +1,21 @@
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\obj\Debug\ExtremeSwank.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\obj\Debug\ExtremeSwank.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.xml
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.dll.config
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\obj\Debug\ExtremeSwank.OAuth.dll
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\obj\Debug\ExtremeSwank.OAuth.pdb
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.dll.config
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.dll
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.pdb
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.xml
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.dll.config
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.dll
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.pdb
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\bin\Debug\ExtremeSwank.OAuth.xml
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\obj\Debug\ExtremeSwank.OAuth.dll
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\obj\Debug\ExtremeSwank.OAuth.pdb

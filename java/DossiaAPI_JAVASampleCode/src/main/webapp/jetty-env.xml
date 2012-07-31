@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
+ <Configure class="org.mortbay.jetty.webapp.WebAppContext">
+    <Set name="contextPath">/DossiaAPIJavaSampleCode</Set>
+   
+	    
+    <New class="org.mortbay.jetty.plus.naming.EnvEntry">
+		<Arg>CONSUMER_KEY</Arg>
+		<Arg type="java.lang.String">demoConsumerKey</Arg>
+	</New>
+
+    <New class="org.mortbay.jetty.plus.naming.EnvEntry">
+		<Arg>SECRET</Arg>
+		<Arg type="java.lang.String">demoConsumerSecret</Arg>
+	</New>
+
+    <New class="org.mortbay.jetty.plus.naming.EnvEntry">
+		<Arg>REQUEST_URL</Arg>
+		<Arg type="java.lang.String">https://webui1.dossia.org/authserver/request_token</Arg>
+	</New>
+
+    <New class="org.mortbay.jetty.plus.naming.EnvEntry">
+		<Arg>AUTHORIZE_URL</Arg>
+		<Arg type="java.lang.String">https://webui1.dossia.org/authserver/authorize</Arg>
+	</New>
+
+    <New class="org.mortbay.jetty.plus.naming.EnvEntry">
+		<Arg>ACCESS_URL</Arg>
+		<Arg type="java.lang.String">https://webui1.dossia.org/authserver/access_token</Arg>
+	</New>
+
+    <New class="org.mortbay.jetty.plus.naming.EnvEntry">
+		<Arg>TOKENS_FILE</Arg>
+		<Arg type="java.lang.String">usertokens.xml</Arg>
+	</New>
+
+<!--  this is an exmaple url for rest service -->
+    <New class="org.mortbay.jetty.plus.naming.EnvEntry">
+		<Arg>REMOTE_ROOT_URL</Arg>
+		<Arg type="java.lang.String">https://webui1.dossia.org/dossia-restful-api/services/v1r0/records/</Arg>
+	</New>
+
+</Configure>

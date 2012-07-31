@@ -1,0 +1,12 @@
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\obj\Release\ResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Release\ExtremeSwank.OpenID.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Release\ExtremeSwank.OpenID.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Release\ExtremeSwank.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Release\ExtremeSwank.OpenId.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Release\ExtremeSwank.OpenId.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Release\ExtremeSwank.OpenId.xml
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Release\ExtremeSwank.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\obj\Release\ExtremeSwank.OpenID.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\obj\Release\ExtremeSwank.OpenID.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Release\ExtremeSwank.OpenID.OAuth.xml
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Release\ExtremeSwank.OAuth.xml

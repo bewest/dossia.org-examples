@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api:container xmlns:api="http://www.dossia.org/v2.0/api" xmlns:phr="http://www.dossia.org/v2.0/xml/phr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dossia.org/v2.0/api http://www.dossia.org/v2.0/api/container.xsd">
+    <api:document>
+        <api:payload>
+            <phr:Allergy class="Environmental" ProfessionallySourced="true">
+                <phr:Origin Classification="PHR">
+                    <phr:Organization ProviderType="Other">
+                        <phr:OrganizationName>Dossia</phr:OrganizationName>
+                    </phr:Organization>
+                </phr:Origin>
+                <phr:Date Type="Actual">
+                    <phr:StartDate>2009-09-12</phr:StartDate>
+                    <phr:EndDate>2009-11-30</phr:EndDate>
+                </phr:Date>
+                <phr:Negation>true</phr:Negation>
+                <phr:AllergenCode System="ICD" MinorVersion="0" MajorVersion="1">
+                    <phr:Code>23812</phr:Code>
+                    <phr:ShortDescription>Dust Allergy</phr:ShortDescription>
+                </phr:AllergenCode>
+                <phr:Reaction System="ICD" MinorVersion="0" MajorVersion="1">
+                    <phr:Code>83921</phr:Code>
+                    <phr:LongDescription>Sneezing, Cugh</phr:LongDescription>
+                </phr:Reaction>
+                <phr:Status>Active</phr:Status>
+                <phr:Frequency>Continual</phr:Frequency>
+                <phr:Severity>Moderate</phr:Severity>
+            </phr:Allergy>
+        </api:payload>
+    </api:document>
+</api:container>

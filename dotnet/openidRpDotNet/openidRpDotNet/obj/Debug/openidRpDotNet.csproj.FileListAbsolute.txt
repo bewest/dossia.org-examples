@@ -1,0 +1,13 @@
+C:\dev\openidRpDotNet\openidRpDotNet\bin\openidRpDotNet.pdb
+C:\dev\openidRpDotNet\openidRpDotNet\bin\ExtremeSwank.OAuth.dll
+C:\dev\openidRpDotNet\openidRpDotNet\bin\ExtremeSwank.OpenId.dll
+C:\dev\openidRpDotNet\openidRpDotNet\bin\ExtremeSwank.OpenId.OAuth.dll
+C:\dev\openidRpDotNet\openidRpDotNet\bin\ExtremeSwank.OpenId.pdb
+C:\dev\openidRpDotNet\openidRpDotNet\bin\ExtremeSwank.OpenId.xml
+C:\dev\openidRpDotNet\openidRpDotNet\bin\ExtremeSwank.OAuth.pdb
+C:\dev\openidRpDotNet\openidRpDotNet\bin\ExtremeSwank.OAuth.xml
+C:\dev\openidRpDotNet\openidRpDotNet\bin\ExtremeSwank.OpenId.OAuth.pdb
+C:\dev\openidRpDotNet\openidRpDotNet\bin\ExtremeSwank.OpenId.OAuth.xml
+C:\dev\openidRpDotNet\openidRpDotNet\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\openidRpDotNet\openidRpDotNet\obj\Debug\openidRpDotNet.dll
+C:\dev\openidRpDotNet\openidRpDotNet\obj\Debug\openidRpDotNet.pdb

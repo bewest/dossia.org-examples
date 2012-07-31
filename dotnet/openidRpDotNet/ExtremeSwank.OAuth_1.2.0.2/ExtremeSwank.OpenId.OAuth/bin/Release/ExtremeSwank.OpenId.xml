@@ -1,0 +1,3870 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExtremeSwank.OpenId</name>
+    </assembly>
+    <members>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy">
+            <summary>
+            Common schema definitions for Attribute Exchange.
+            Legacy suggestion from 4-2007.  Implemented by myopenid.com.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.UserName">
+            <summary>
+            Subject's alias or "screen" name 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.FullName">
+            <summary>
+            Full name of subject
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.NamePrefix">
+            <summary>
+            Honorific prefix for the subject's name
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.FirstName">
+            <summary>
+            First or given name of subject
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.LastName">
+            <summary>
+            Last name or surname of subject
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.MiddleName">
+            <summary>
+            Middle name(s) of subject
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.NameSuffix">
+            <summary>
+            Suffix of subject's name
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.CompanyName">
+            <summary>
+            Company name (employer)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.JobTitle">
+            <summary>
+            Employee title
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.BirthDate">
+            <summary>
+            Date of birth
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.BirthYear">
+            <summary>
+            Year of birth (four digits)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.BirthMonth">
+            <summary>
+            Month of birth (1-12)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.Birthday">
+            <summary>
+            Day of birth (1-31)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.PhonePreferred">
+            <summary>
+            Main phone number (preferred)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.PhoneHome">
+            <summary>
+            Home phone number 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.PhoneWork">
+            <summary>
+            Business phone number
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.PhoneMobile">
+            <summary>
+            Cellular (or mobile) phone number
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.PhoneFax">
+            <summary>
+            Fax number 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.HomeAddress">
+            <summary>
+            Home postal address: street number, name and apartment number
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.HomeAddress2">
+            <summary>
+            Home postal address: supplementary information 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.HomeCity">
+            <summary>
+            Home city name
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.HomeState">
+            <summary>
+            Home state or province name 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.HomeCountry">
+            <summary>
+            Home country code in ISO.3166.1988 (alpha 2) format 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.HomePostalCode">
+            <summary>
+            Home postal code; region specific format
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.WorkAddress">
+            <summary>
+            Business postal address: street number, name and apartment number 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.WorkAddress2">
+            <summary>
+            Business postal address: supplementary information
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.WorkCity">
+            <summary>
+            Business city name 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.WorkState">
+            <summary>
+            Business state or province name
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.WorkCountry">
+            <summary>
+            Business country code in ISO.3166.1988 (alpha 2) format
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.WorkPostalCode">
+            <summary>
+            Business postal or zip code; region specific format
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.Email">
+            <summary>
+            Internet SMTP email address as per RFC2822 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.IMAim">
+            <summary>
+            AOL instant messaging service handle
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.IMIcq">
+            <summary>
+            ICQ instant messaging service handle 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.IMMsn">
+            <summary>
+            MSN instant messaging service handle
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.IMYahoo">
+            <summary>
+            Yahoo! instant messaging service handle
+            </summary>        
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.IMJabber">
+            <summary>
+            Jabber instant messaging service handle
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.IMSkype">
+            <summary>
+            Skype instant messaging service handle
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.UrlWebsite">
+            <summary>
+            Web site URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.UrlBlog">
+            <summary>
+            Blog URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.UrlLinkedIn">
+            <summary>
+            LinkedIn URL
+            </summary>        
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.UrlAmazon">
+            <summary>
+            Amazon URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.UrlFlickr">
+            <summary>
+            Flickr URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.UrlDelicious">
+            <summary>
+            del.icio.us URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.SpokenName">
+            <summary>
+            Spoken name (web URL to media file)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.AudioGreeting">
+            <summary>
+            Audio greeting (web URL to media file)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.VideoGreeting">
+            <summary>
+            Video greeting (web URL to media file)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.Image">
+            <summary>
+            Image (web URL); unspecified dimension
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.ImageSquare">
+            <summary>
+            Image (web URL) with equal width and height
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.Image4To3">
+            <summary>
+            Image (web URL) 4:3 aspect ratio - landscape
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.Image3To4">
+            <summary>
+            Image (web URL) 3:4 aspect ratio - portrait
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.Favicon">
+            <summary>
+            Image (web URL); favicon format as per FAVICON-W3C. The format for the image must be 16x16 pixels or 32x32 pixels, using either 8-bit or 24-bit colors. The format of the image must be one of PNG (a W3C standard), GIF, or ICO. 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.Gender">
+            <summary>
+            Gender, either "M" or "F"
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.Language">
+            <summary>
+            Preferred language, as per RFC4646 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.TimeZone">
+            <summary>
+            Home time zone information (as specified in zoneinfo)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchemaLegacy.Biography">
+            <summary>
+            Biography (text) 
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Discovery.Html">
+            <summary>
+            HTML Discovery Plugin.  Provides everything needed to
+            discover OpenIDs using HTML documents.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.IDiscovery">
+            <summary>
+            Interface used for Discovery plugins.
+            Discovery plugins extend the OpenID Client to support additional identifier discovery methods.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IDiscovery.Discover(System.String)">
+            <summary>
+            Method called during discovery process.
+            </summary>
+            <param name="content">HTTP response output from request.</param>
+            <returns>An array of <see cref="T:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult"/> objects.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IDiscovery.ProcessId(System.String)">
+            <summary>
+            Method called prior to discovery process.  Accepts a claimed identifier and returns
+            the normalized identifier, and an endpoint URL.
+            </summary>
+            <param name="openid">String containing claimed identifier.</param>
+            <returns>A populated <see cref="T:ExtremeSwank.OpenId.PlugIns.Discovery.NormalizationEntry"/> object.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.IDiscovery.Name">
+            <summary>
+            Human-readable name of plugin.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.IDiscovery.Parent">
+            <summary>
+            Parent <see cref="T:ExtremeSwank.OpenId.StateContainer"/> object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.IDiscovery.Version">
+            <summary>
+            Based on discovery, returns highest protocol version supported by endpoint. Used by consumer
+            to determine which version of protocol to use when connecting to Identity Provider.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Html.ProcessId(System.String)">
+            <summary>
+            Processes a claimed identifier and returns a normalized ID and an endpoint URL.
+            </summary>
+            <param name="openid">Claimed identifier to process.</param>
+            <returns>A populated NormalizationEntry object, or null if the identitifer cannot
+            be processed by this plug-in.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Html.Discover(System.String)">
+            <summary>
+            Parse HTTP response for OpenID Identity Providers.
+            </summary>
+            <param name="content">HTTP response content to parse.</param>
+            <returns>An array of DiscoveryResult objects.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Html.#ctor(ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Creates a new HTML discovery plugin and automatically registers it with
+            the supplied StateContainer object.
+            </summary>
+            <param name="state">Parent StateContainer object</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Html.#ctor(ExtremeSwank.OpenId.ClientCore)">
+            <summary>
+            Creates a new HTML discovery plugin and automatically registers it with
+            the supplied StateContainer object.
+            </summary>
+            <param name="client">Parent ClientCore object.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Html.ToString">
+            <summary>
+            Get the human-readable name of this plug-in.
+            </summary>
+            <returns>A string containing the plug-in name.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.Html.Name">
+            <summary>
+            Gets the human-readable name of this Discovery plug-in.
+            </summary>
+            <remarks>Always returns "HTML Discovery Plugin".</remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.Html.Parent">
+            <summary>
+            Gets or sets the parent StateContainer object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.Html.Version">
+            <summary>
+            Gets the highest version of OpenID protocol supported by discovered Identity Provider.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy">
+            <summary>
+            Provides support for the OpenID Provider Authentication Policy Extension.
+            </summary>
+            <remarks>
+            Not all OpenID Providers support all OpenID extensions.  If the expected data is
+            not returned after a successful request, the OpenID Provider may not support this
+            extension.
+            </remarks>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.IExtension">
+            <summary>
+            Interface used for Extension plugins. 
+            Extension plugins extend the OpenID Consumer to support additional data-passing specifications.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IExtension.BuildAuthorizationData(ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult)">
+            <summary>
+            Data to be passed to Identity Provider during initial
+            authenticaton request.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IExtension.Validation">
+            <summary>
+            Perform any additional checking that needs to occur during validation.
+            </summary>
+            <remarks>If the extension should not perform validation, always return true.</remarks>
+            <returns>Returns true if validation is successful, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IExtension.PopulateUserObject(ExtremeSwank.OpenId.OpenIdUser)">
+            <summary>
+            Populate a give OpenIdUser object with extension data received from 
+            the OpenID Provider.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.IExtension.Name">
+            <summary>
+            Human-readable name of plugin.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.IExtension.Parent">
+            <summary>
+            Parent <see cref="T:ExtremeSwank.OpenId.StateContainer"/> StateContainer object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.IExtension.NamespaceUri">
+            <summary>
+            Advertised namespace this plug-in supports.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.#ctor(ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Creates an instance of AuthenticationPolicy extension.
+            </summary>
+            <param name="state">The parent StateContainer object.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.#ctor(ExtremeSwank.OpenId.ClientCore)">
+            <summary>
+            Creates an instance of AuthenticationPolicy extension.
+            </summary>
+            <param name="client">The parent <see cref="T:ExtremeSwank.OpenId.ClientCore"/> object.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.BuildAuthorizationData(ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult)">
+            <summary>
+            Name-Value data to be sent to Identity Provider during
+            initial authentication request.
+            </summary>
+            <param name="discResult">The DiscoveryResult object to use.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.Validation">
+            <summary>
+            Whether or not the validation completed per this extension.
+            </summary>
+            <returns>Always returns true.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.PopulateUserObject(ExtremeSwank.OpenId.OpenIdUser)">
+            <summary>
+            Returns data for use by OpenIdUser object.
+            </summary>
+            <param name="userObject">The OpenIdUser object to populate.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.ToString">
+            <summary>
+            Get the human-readable name of this plug-in.
+            </summary>
+            <returns>A string containing the plug-in name.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.MaxAge">
+            <summary>
+            The longest period of time that can pass since the user was
+            last authenticated by the Identity Provider.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.PreferredPolicies">
+            <summary>
+            A List of preferred policy URIs that are requested for this authentication
+            request.  Use arguments from <see cref="T:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicySchema"/>.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.Name">
+            <summary>
+            The human-readable name of this extension.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.Parent">
+            <summary>
+            The StateContainer object that is parent to this extension.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicy.NamespaceUri">
+            <summary>
+            The namespace URI of this extension.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Discovery.Yadis">
+            <summary>
+            Yadis Discovery Plugin.
+            Provides everything needed to perform Yadis discovery.
+            Depends on <see cref="T:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds"/> to decode resulting XRDS document.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Yadis.ProcessId(System.String)">
+            <summary>
+            Not used.  Always returns null.
+            </summary>
+            <param name="openid">Claimed identifier.</param>
+            <returns>Null</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Yadis.Discover(System.String)">
+            <summary>
+            Perform Yadis discovery on a HTTP response, automatically retrieving and processing
+            discovered documents.
+            </summary>
+            <param name="content">HTTP response content to parse.</param>
+            <returns>An array of DiscoveryResult objects.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Yadis.#ctor(ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Creates a new instance of Yadis.
+            </summary>
+            <param name="state">Parent <see cref="T:ExtremeSwank.OpenId.StateContainer"/> object.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Yadis.#ctor(ExtremeSwank.OpenId.ClientCore)">
+            <summary>
+            Create a new instance of Yadis.
+            </summary>
+            <param name="client">Parent <see cref="T:ExtremeSwank.OpenId.ClientCore"/> object.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Yadis.ToString">
+            <summary>
+            Get the human-readable name of this plug-in.
+            </summary>
+            <returns>A string containing the plug-in name.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.Yadis.Name">
+            <summary>
+            Gets the human-readable name of the discovery plugin.
+            </summary>
+            <remarks>Always returns "Yadis Discovery Plugin".</remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.Yadis.Parent">
+            <summary>
+            Parent OpenID object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.Yadis.Version">
+            <summary>
+            Highest version of OpenID protocol supported by the discovered Identity Provider.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.ISessionPersistence">
+            <summary>
+            Interface used by all objects implementing per-user session persistence.
+            </summary>
+            <example>
+            <para>
+            Implementing the ISessionPersistence interface just requires implementing
+            the Cnonce property.  When the property is set, it must be persisted immediately.
+            </para>
+            <para>
+            The following code persists to the ASP.NET Session object.
+            </para>
+            <code>
+            public class SessionSessionManager : ISessionPersistence
+            {
+                const string cnoncestr = "AllowLogin";
+                
+                #region ISessionPersistence Members
+                
+                public int Cnonce
+                {
+                    get
+                    {
+                        if (HttpContext.Current.Session[cnoncestr] == null)
+                        {
+                            return -1;
+                        }
+                        return (int)HttpContext.Current.Session[cnoncestr];
+                    }
+                    set { HttpContext.Current.Session[cnoncestr] = value; }
+                }
+                
+                #endregion
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.ISessionPersistence.Nonce">
+            <summary>
+            Gets or sets the nonce value used to protect against replay attacks.
+            </summary>
+        </member>
+        <member name="M:Mono.Math.Prime.PrimalityTests.RabinMillerTest(Mono.Math.BigInteger,Mono.Math.Prime.ConfidenceFactor)">
+            <summary>
+                Probabilistic prime test based on Rabin-Miller's test
+            </summary>
+            <param name="n" type="BigInteger.BigInteger">
+                <para>
+                    The number to test.
+                </para>
+            </param>
+            <param name="confidence" type="int">
+                <para>
+            The number of chosen bases. The test has at least a
+            1/4^confidence chance of falsely returning True.
+                </para>
+            </param>
+            <returns>
+            <para>
+            	True if "this" is a strong pseudoprime to randomly chosen bases.
+            </para>
+            <para>
+            	False if "this" is definitely NOT prime.
+            </para>
+            </returns>
+        </member>
+        <member name="T:Mono.Math.Prime.ConfidenceFactor">
+            <summary>
+            A factor of confidence.
+            </summary>
+        </member>
+        <member name="F:Mono.Math.Prime.ConfidenceFactor.ExtraLow">
+            <summary>
+            Only suitable for development use, probability of failure may be greater than 1/2^20.
+            </summary>
+        </member>
+        <member name="F:Mono.Math.Prime.ConfidenceFactor.Low">
+            <summary>
+            Suitable only for transactions which do not require forward secrecy.  Probability of failure about 1/2^40
+            </summary>
+        </member>
+        <member name="F:Mono.Math.Prime.ConfidenceFactor.Medium">
+            <summary>
+            Designed for production use. Probability of failure about 1/2^80.
+            </summary>
+        </member>
+        <member name="F:Mono.Math.Prime.ConfidenceFactor.High">
+            <summary>
+            Suitable for sensitive data. Probability of failure about 1/2^160.
+            </summary>
+        </member>
+        <member name="F:Mono.Math.Prime.ConfidenceFactor.ExtraHigh">
+            <summary>
+            Use only if you have lots of time! Probability of failure about 1/2^320.
+            </summary>
+        </member>
+        <member name="F:Mono.Math.Prime.ConfidenceFactor.Provable">
+            <summary>
+            Only use methods which generate provable primes. Not yet implemented.
+            </summary>
+        </member>
+        <member name="T:Mono.Security.Cryptography.DHKeyGeneration">
+            <summary>
+            Defines the different Diffie-Hellman key generation methods.
+            </summary>
+        </member>
+        <member name="F:Mono.Security.Cryptography.DHKeyGeneration.Random">
+            <summary>
+            Returns dynamically generated values for P and G. Unlike the Sophie Germain or DSA key generation methods,
+            this method does not ensure that the selected prime offers an adequate security level.
+            </summary>
+        </member>
+        <member name="F:Mono.Security.Cryptography.DHKeyGeneration.Static">
+            <summary>
+            Returns values for P and G that are hard coded in this library. Contrary to what your intuition may tell you,
+            using these hard coded values is perfectly safe.
+            The values of the P and G parameters are taken from 'The OAKLEY Key Determination Protocol' [RFC2412].
+            This is the prefered key generation method, because it is very fast and very safe.
+            Because this method uses fixed values for the P and G parameters, not all bit sizes are supported.
+            The current implementation supports bit sizes of 768, 1024 and 1536.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.SchemaDef">
+            <summary>
+            Primitive used with Extension plugins. Links aliases to namespace URIs.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.SchemaDef.#ctor(System.String,System.String)">
+            <summary>
+            Create a new SchemaDef.
+            </summary>
+            <param name="alias">Alias to link.</param>
+            <param name="uri">Namespace URI.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.SchemaDef.#ctor(System.String,System.Uri)">
+            <summary>
+            Create a new SchemaDef.
+            </summary>
+            <param name="alias">Alias to link.</param>
+            <param name="uri">Namespace URI.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.SchemaDef.ToString">
+            <summary>
+            Returns the defined namespace URI.
+            </summary>
+            <returns>A string representing the defined namespace URI.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.SchemaDef.Alias">
+            <summary>
+            Gets the defined alias.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.SchemaDef.Uri">
+            <summary>
+            Gets the defined namespace URI.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.IAssociationPersistence">
+             <summary>
+             Interface used for Association persistence management objects.
+             </summary>
+             <example>
+             <code>
+             public sealed class ApplicationAssociationManager : IAssociationPersistence
+             {
+                const string nextAssocCleanup = "OpenID_NextAssocCleanup";
+                const string associations = "OpenID_Associations";
+            
+                private DateTime NextCleanup
+                {
+                    get 
+                    {
+                        if (HttpContext.Current.Application[nextAssocCleanup] == null) { return DateTime.MaxValue; }
+                        return (DateTime)HttpContext.Current.Application[nextAssocCleanup]; 
+                    }
+                    set { HttpContext.Current.Application[nextAssocCleanup] = value; }
+                }
+            
+                private DataTable Associations
+                {
+                    get
+                    {
+                        if (HttpContext.Current.Application[associations] == null)
+                        {
+                            Init();
+                        }
+                        return (DataTable)HttpContext.Current.Application[associations];
+                    }
+                    set
+                    {
+                        if (HttpContext.Current.Application[associations] == null)
+                        {
+                            Init();
+                        }
+                        HttpContext.Current.Application[associations] = value;
+                    }
+                }
+            
+                public void Init()
+                {
+                    DataTable dt = new DataTable();
+                    dt.Columns.Add("protocol", typeof(ProtocolVersion));
+                    dt.Columns.Add("server", typeof(string));
+                    dt.Columns.Add("handle", typeof(string));
+                    dt.Columns.Add("assoc_type", typeof(string));
+                    dt.Columns.Add("session_type", typeof(string));
+                    dt.Columns.Add("secret", typeof(byte[]));
+                    dt.Columns.Add("expiration", typeof(DateTime));
+                    dt.AcceptChanges();
+            
+                    HttpContext.Current.Application[associations] = dt;
+                }
+            
+                public void Remove(Association assoc)
+                {
+                    DataRow[] rows = Associations.Select("handle = '" + assoc.Handle + "'");
+                    foreach (DataRow dr in rows) 
+                    {
+                        Associations.Rows.Remove(dr);
+                    }
+                    Associations.AcceptChanges();
+                }
+            
+                public void Add(Association association)
+                {
+                    // Check for existing association
+                    DataRow[] result = Associations.Select("server = '" + association.Server + "'");
+                    if (result.Length > 0)
+                    {
+                        for (int i = 0; i &lt; result.Length; i++)
+                        {
+                            Associations.Rows.Remove(result[i]);
+                        }
+                    }
+            
+                    // Add new row
+                    DataRow dr = Associations.NewRow();
+                    dr["protocol"] = association.ProtocolVersion;
+                    dr["server"] = association.Server;
+                    dr["handle"] = association.Handle;
+                    dr["assoc_type"] = association.AssociationType;
+                    dr["session_type"] = association.SessionType;
+                    dr["secret"] = association.Secret;
+                    dr["expiration"] = association.Expiration;
+                    Associations.Rows.Add(dr);
+                    Associations.AcceptChanges();
+                }
+            
+                private Association ToAssociation(DataRow dr)
+                {
+                    Association ar = new Association();
+                    ar.ProtocolVersion = (ProtocolVersion)dr["protocol"];
+                    ar.Server = (string)dr["server"];
+                    ar.Handle = (string)dr["handle"];
+                    ar.AssociationType = (string)dr["assoc_type"];
+                    ar.SessionType = (string)dr["session_type"];
+                    ar.Secret = (byte[])dr["secret"];
+                    ar.Expiration = (DateTime)dr["expiration"];
+                    return ar;
+                }
+            
+                public Association FindByHandle(string handle)
+                {
+                    DataRow[] result = Associations.Select("handle = '" + handle + "'");
+                    if (result.Length > 0)
+                    {
+                        return ToAssociation(result[0]);
+                    }
+                    return null;
+                }
+            
+                public Association FindByServer(string server)
+                {
+                    DataRow[] result = Associations.Select("server = '" + server + "'");
+                    if (result.Length > 0)
+                    {
+                        return ToAssociation(result[0]);
+                    }
+                    return null;
+                }
+            
+                public void Cleanup()
+                {
+                    if (NextCleanup == null || NextCleanup &lt; DateTime.UtcNow)
+                    {
+                        foreach (DataRow dr in Associations.Rows)
+                        {
+                            if ((DateTime)dr["expiration"] &lt; DateTime.UtcNow)
+                            {
+                                dr.Delete();
+                            }
+                        }
+                        Associations.AcceptChanges();
+                        NextCleanup = DateTime.UtcNow.AddMinutes(10);
+                    }
+                }
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IAssociationPersistence.Remove(ExtremeSwank.OpenId.Persistence.Association)">
+            <summary>
+            Removes an association entry from persistence.
+            </summary>
+            <param name="assoc">The association entry to remove.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IAssociationPersistence.Add(ExtremeSwank.OpenId.Persistence.Association)">
+            <summary>
+            Adds an assocation entry to persistence.
+            </summary>
+            <param name="association">The Association to store.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IAssociationPersistence.FindByHandle(System.String)">
+            <summary>
+            Retrieve an association entry by its handle.
+            </summary>
+            <param name="handle">The association handle.</param>
+            <returns>An Association object representing the stored association.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IAssociationPersistence.FindByServer(System.String)">
+            <summary>
+            Retrieve an association entry by the OpenID Provider Server URL
+            </summary>
+            <param name="server">The server URL.</param>
+            <returns>An Association object representing the stored association.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IAssociationPersistence.Cleanup">
+            <summary>
+            Remove expired association entries from persistence.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult">
+            <summary>
+            Holds all important data discovered during the discovery process.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult.ServerUrl">
+            <summary>
+            Gets or sets the discovered OpenID Provider URL.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult.LocalId">
+            <summary>
+            Gets or sets the discovered Local Identitifier.
+            </summary>
+            <remarks>
+            If no local identitifier was discovered, this should be
+            set to the same value as ClaimedIdUrl.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult.ClaimedId">
+            <summary>
+            Gets or sets the discovered claimed identifier.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult.AuthVersion">
+            <summary>
+            Gets or sets the authentication protocol version supported
+            by the OpenID Provider.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult.Priority">
+            <summary>
+            Gets or sets the priority of the discovery result.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResultComparer">
+            <summary>
+            Compare DiscoveryResult object by the value of the Priority member.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResultComparer.Compare(ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult,ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult)">
+            <summary>
+            Compare a <see cref="T:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult"/> object with another <see cref="T:ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult"/> object.
+            </summary>
+            <param name="x">First DiscoveryResult object.</param>
+            <param name="y">Second DiscoveryResult object.</param>
+            <returns>Result of comparison of the Priority member values.</returns>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.OpenIdDesktopClient">
+            <summary>
+            Provides OpenID client support for desktop applications.
+            </summary>
+            <remarks>
+            <para>
+            The user's web browser will need to be launched to perform authentication.
+            All data will be passed back to the application through an embedded web server that will
+            only start as needed to receive the authentication response.
+            </para>
+            <para>
+            Use BeginAuthentication() to asynchronously start
+            the temporary HTTP server and return the redirect URL.  This URL should be passed to the client host
+            and launched in its web browser.  Use RetrieveAuthenticationResponse() to wait for the authentication
+            response, or subscribe to the available events if blocking is not desired.
+            </para>
+            <para>
+            In either case, the HTTP server will be closed if the timeout has expired.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.#ctor(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            Create a new instance of OpenIdDesktopClient.
+            </summary>
+            <param name="identity">The OpenID Identity to authenticate.</param>
+            <param name="timeout">The amount of time to wait for a response back from the OpenID Provider.</param>
+            <param name="hostName">The hostname that will be used for the return URL.</param>
+            <param name="port">The port number that should be used to receive the authentication response from the User's web browser, if random ports are not desired.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.#ctor(System.String,System.Int32,System.String)">
+            <summary>
+            Create a new instance of OpenIdDesktopClient.
+            </summary>
+            <param name="identity">The OpenID Identity to authenticate.</param>
+            <param name="timeout">The amount of time to wait for a response back from the OpenID Provider.</param>
+            <param name="hostName">The hostname that will be used for the return URL.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.#ctor(System.String,System.Int32)">
+            <summary>
+            Create a new instance of OpenIdDesktopClient.
+            </summary>
+            <param name="identity">The OpenID Identity to authenticate.</param>
+            <param name="timeout">The amount of time to wait for a response back from the OpenID Provider.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.#ctor(System.String,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Create a new instance of OpenIdDesktopClient.
+            </summary>
+            <param name="identity">The OpenID Identity to authenticate.</param>
+            <param name="timeout">The amount of time to wait for a response back from the OpenID Provider.</param>
+            <param name="hostName">The hostname that will be used for the return URL.</param>
+            <param name="lowPort">The lowest port number in the desired range.</param>
+            <param name="highPort">The highest port number in the desired range.</param>
+            <remarks>
+            Use a random port between two supplied port numbers.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.BeginAuthentication">
+            <summary>
+            Start listening for an authentication response, and return the redirect URL that the web browser
+            will be pointed to.
+            </summary>
+            <returns>The redirect URL for the remote web browser.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.CancelAuthentication">
+            <summary>
+            Stop listening for the authentication response.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.RetrieveAuthenticationResponse">
+            <summary>
+            Wait until an authentication response has been received, and return the result.
+            </summary>
+            <returns>True if succeeded, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.EnableStatefulMode(ExtremeSwank.OpenId.IAssociationPersistence,ExtremeSwank.OpenId.ISessionPersistence)">
+            <summary>
+            Enable Stateful authentication using supplied persistence objects.
+            </summary>
+            <param name="associationManager">IAssociationPersistence object to use when persisting associations.</param>
+            <param name="sessionManager">ISessionPersistence object to use when persisting per-user data.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.EnableStatefulMode">
+            <summary>
+            Enable Stateful authentication using default (volatile) persistence objects.
+            </summary>
+            <remarks>
+            Uses <see cref="T:ExtremeSwank.OpenId.Persistence.SingularAssociationManager"/> and <see cref="T:ExtremeSwank.OpenId.Persistence.SingularSessionManager"/>
+            objects.  These are volatile, and all contained data will be destroyed when 
+            the <see cref="T:ExtremeSwank.OpenId.OpenIdDesktopClient"/> object is disposed.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.EnableDirectedIdentity(System.Uri)">
+            <summary>
+            Enable Directed Identity mode for a specific OpenID Provider.
+            </summary>
+            <remarks>
+            Consumer will only authenticate with the supplied provider URL,
+            and will accept the OpenID returned in the authentication response.
+            </remarks>
+            <param name="openidServer">URL to the desired OpenID server</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.Init(System.String)">
+            <summary>
+            Shared initialization method used by all constructors.
+            </summary>
+            <param name="identity">OpenID Identity to authenticate.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.GetConsumer(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Create a new OpenIdClient object with settings appropriate for this class.
+            </summary>
+            <param name="arguments">The <see cref="T:System.Collections.Specialized.NameValueCollection"/> containing the received arguments.</param>
+            <returns>The created OpenIdClient object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.SetConsumerUrls">
+            <summary>
+            Updates the <see cref="T:ExtremeSwank.OpenId.OpenIdClient"/> object with the
+            correct TrustRoot and RetunURL values.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.GenerateRandomPort">
+            <summary>
+            If a port was not specified in the constructor, generate a
+            random port number between 1024 and 5000.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.WaitForResponse">
+            <summary>
+            Intended to be called asynchronously.  Check every second to see if the user's authentication
+            response has been received.  If timeout occurs, automatically close HTTP server.
+            </summary>
+            <returns>True if a response has been received, false if timed out.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.BlockWaitForResponse">
+            <summary>
+            Intended to be called synchronously.  Check every second to see if the user's authentication
+            response has been received.  Will wait until the automatically called asynchronous WaitForResponse()
+            function has returned.
+            </summary>
+            <returns>True if authentication is successful, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.NonblockingListener">
+            <summary>
+            Start the temporary HTTP server, and register
+            the callback method.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.ListenerCallback(System.IAsyncResult)">
+            <summary>
+            The callback method for the temporary HTTP server.
+            </summary>
+            <param name="result">The <see cref="T:System.IAsyncResult"/> object representing the active <see cref="T:System.Net.HttpListener"/>.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.openid_ReceivedCancel(System.Object,System.EventArgs)">
+            <summary>
+            Callback method for when OpenIdClient invokes its <see cref="E:ExtremeSwank.OpenId.ClientCore.ReceivedCancel"/> event.
+            </summary>
+            <param name="sender">The OpenIdClient object invoking the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.openid_ValidationSucceeded(System.Object,System.EventArgs)">
+            <summary>
+            Callback method for when OpenIdClient invokes its <see cref="E:ExtremeSwank.OpenId.ClientCore.ValidationSucceeded"/> event.
+            </summary>
+            <param name="sender">The OpenIdClient object invoking the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.openid_ValidationFailed(System.Object,System.EventArgs)">
+            <summary>
+            Callback method for when OpenIdClient invokes its <see cref="E:ExtremeSwank.OpenId.ClientCore.ValidationFailed"/> event.
+            </summary>
+            <param name="sender">The OpenIdClient object invoking the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.Dispose">
+            <summary>
+            Dispose all resources.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdDesktopClient.Dispose(System.Boolean)">
+            <summary>
+            Dispose all resources.
+            </summary>
+            <param name="disposing">If true, dispose both managed and unmanaged resources.</param>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.OpenIdDesktopClient.Prefix">
+            <summary>
+            Generates a URL prefix that will be used to initialize
+            the temporary HTTP server.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.OpenIdDesktopClient.Consumer">
+            <summary>
+            The OpenIdClient object used for processing.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.OpenIdDesktopClient.Error">
+            <summary>
+            Current error status.
+            </summary>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.OpenIdDesktopClient.AuthenticationResponseReceived">
+            <summary>
+            Authentication response has been received.
+            </summary>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.OpenIdDesktopClient.AuthenticationResponseTimedOut">
+            <summary>
+            Authentication response has timed out.
+            </summary>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.OpenIdDesktopClient.AuthenticationSuccessful">
+            <summary>
+            Authentication was successful.
+            </summary>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.OpenIdDesktopClient.AuthenticationFailed">
+            <summary>
+            Authentication failed.
+            </summary>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.OpenIdDesktopClient.AuthenticationCanceled">
+            <summary>
+            Authentication was cancelled at the OpenID Provider.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.OpenIdDesktopClient.AuthenticationTimer">
+            <summary>
+            Delegate used for the asynchronous timeout checker.
+            </summary>
+            <returns>Value not used.</returns>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Tracer">
+            <summary>
+            Writes tracing information to the current HttpContext.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Tracer.Write(System.String)">
+            <summary>
+            Writes a message to the current Trace context.
+            </summary>
+            <remarks>
+            If running under ASP.NET, will write to the current HttpContext's Trace
+            object.  For other environments, will write to System.Diagnostics.Trace.
+            </remarks>
+            <param name="message">Message to write.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Tracer.Warn(System.String)">
+            <summary>
+            Writes a warning to the current Trace context.
+            </summary>
+            <remarks>
+            If running under ASP.NET, will write to the current HttpContext's Trace
+            object.  For other environments, will write to System.Diagnostics.Trace.
+            </remarks>
+            <param name="message">Warning to write.</param>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.StateContainer">
+            <summary>
+            State object passed among static methods that implement OpenID authentication steps.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.StateContainer.#ctor">
+            <summary>
+            Creates a new StateContainer.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.StateContainer.#ctor(ExtremeSwank.OpenId.IAssociationPersistence,ExtremeSwank.OpenId.ISessionPersistence)">
+            <summary>
+            Creates a new StateContainer.
+            </summary>
+            <param name="associationManager">Association persistence manager.</param>
+            <param name="sessionManager">Session persistence manager.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.StateContainer.RegisterPlugIn(ExtremeSwank.OpenId.IDiscovery)">
+            <summary>
+            Registers a discovery plugin.
+            </summary>
+            <param name="plugIn">IDiscovery object to register.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.StateContainer.RegisterPlugIn(ExtremeSwank.OpenId.IExtension)">
+            <summary>
+            Registers an extension plugin.
+            </summary>
+            <param name="plugIn">IExtension object to register.</param>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.AssociationManager">
+            <summary>
+            Gets or sets the Association persistence manager.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.SessionManager">
+            <summary>
+            Gets or sets the Session persistence manager.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.AuthMode">
+            <summary>
+            Gets or sets the authentication mode currently being used.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.TrustRoot">
+            <summary>
+            Gets or sets the root URL of this web server or domain.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.Nonce">
+            <summary>
+            Persists the cnonce value in the current session so it can
+            be verified when the authentication response is received.
+            </summary>
+            <remarks>
+            This is extremely important to ensure that simply replaying
+            the authentication response does not result in successful
+            authentication.  Cnonce is not populated until an authentication
+            request has been triggered, and it is cleared as soon as the 
+            matching request is received and verified.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.ReturnToUrl">
+            <summary>
+            Gets or sets the URL which the User Agent will be returned to.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.ExtensionPlugIns">
+            <summary>
+            Gets or sets the list of Extension Plugins registered into the current state.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.DiscoveryPlugIns">
+            <summary>
+            Gets or sets the list of Discovery Plugins registered into the current state.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.RequestArguments">
+            <summary>
+            Gets or sets the request arguments.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.StateContainer.ErrorState">
+            <summary>
+            Gets or sets the currently recorded error state.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.RequestedMode">
+            <summary>
+            OpenID modes that can be remotely requested.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.RequestedMode.None">
+            <summary>
+            No OpenID mode was requested.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.RequestedMode.IdResolution">
+            <summary>
+            ID Resolution mode was requested.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.RequestedMode.CanceledByUser">
+            <summary>
+            Operation was cancelled by user.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.RequestedMode.SetupNeeded">
+            <summary>
+            Immediate request determined that user agent is not logged into the OpenID Provider.
+            Must run a standard authentication request.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.RequestedMode.Error">
+            <summary>
+            Error message received from the OpenID Provider.
+            </summary>
+        </member>
+        <member name="T:Mono.Security.Cryptography.DiffieHellmanManaged">
+            <summary>
+            Implements the Diffie-Hellman algorithm.
+            </summary>
+        </member>
+        <member name="T:Mono.Security.Cryptography.DiffieHellman">
+            <summary>
+            Defines a base class from which all Diffie-Hellman implementations inherit.
+            </summary>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellman.Create">
+            <summary>
+            Creates an instance of the default implementation of the <see cref="T:Mono.Security.Cryptography.DiffieHellman"/> algorithm.
+            </summary>
+            <returns>A new instance of the default implementation of DiffieHellman.</returns>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellman.Create(System.String)">
+            <summary>
+            Creates an instance of the specified implementation of <see cref="T:Mono.Security.Cryptography.DiffieHellman"/>.
+            </summary>
+            <param name="algName">The name of the implementation of DiffieHellman to use.</param>
+            <returns>A new instance of the specified implementation of DiffieHellman.</returns>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellman.CreateKeyExchange">
+            <summary>
+            When overridden in a derived class, creates the key exchange data. 
+            </summary>
+            <returns>The key exchange data to be sent to the intended recipient.</returns>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellman.DecryptKeyExchange(System.Byte[])">
+            <summary>
+            When overridden in a derived class, extracts secret information from the key exchange data.
+            </summary>
+            <param name="keyex">The key exchange data within which the secret information is hidden.</param>
+            <returns>The secret information derived from the key exchange data.</returns>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellman.ExportParameters(System.Boolean)">
+            <summary>
+            When overridden in a derived class, exports the <see cref="T:Mono.Security.Cryptography.DHParameters"/>.
+            </summary>
+            <param name="includePrivate"><b>true</b> to include private parameters; otherwise, <b>false</b>.</param>
+            <returns>The parameters for Diffie-Hellman.</returns>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellman.ImportParameters(Mono.Security.Cryptography.DHParameters)">
+            <summary>
+            When overridden in a derived class, imports the specified <see cref="T:Mono.Security.Cryptography.DHParameters"/>.
+            </summary>
+            <param name="parameters">The parameters for Diffie-Hellman.</param>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellman.FromXmlString(System.String)">
+            <summary>
+            Reconstructs a <see cref="T:Mono.Security.Cryptography.DiffieHellman"/> object from an XML string.
+            </summary>
+            <param name="xmlString">The XML string to use to reconstruct the DiffieHellman object.</param>
+            <exception cref="T:System.Security.Cryptography.CryptographicException">One of the values in the XML string is invalid.</exception>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellman.ToXmlString(System.Boolean)">
+            <summary>
+            Creates and returns an XML string representation of the current <see cref="T:Mono.Security.Cryptography.DiffieHellman"/> object.
+            </summary>
+            <param name="includePrivateParameters"><b>true</b> to include private parameters; otherwise, <b>false</b>.</param>
+            <returns>An XML string encoding of the current DiffieHellman object.</returns>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellmanManaged.#ctor">
+            <summary>
+            Initializes a new <see cref="T:Mono.Security.Cryptography.DiffieHellmanManaged"/> instance.
+            </summary>
+            <remarks>The default length of the shared secret is 1024 bits.</remarks>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellmanManaged.#ctor(System.Int32,System.Int32,Mono.Security.Cryptography.DHKeyGeneration)">
+            <summary>
+            Initializes a new <see cref="T:Mono.Security.Cryptography.DiffieHellmanManaged"/> instance.
+            </summary>
+            <param name="bitLength">The length, in bits, of the public P parameter.</param>
+            <param name="l">The length, in bits, of the secret value X. This parameter can be set to 0 to use the default size.</param>
+            <param name="method">One of the <see cref="T:Mono.Security.Cryptography.DHKeyGeneration"/> values.</param>
+            <remarks>The larger the bit length, the more secure the algorithm is. The default is 1024 bits. The minimum bit length is 128 bits.<br/>The size of the private value will be one fourth of the bit length specified.</remarks>
+            <exception cref="T:System.ArgumentException">The specified bit length is invalid.</exception>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellmanManaged.#ctor(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Initializes a new <see cref="T:Mono.Security.Cryptography.DiffieHellmanManaged"/> instance.
+            </summary>
+            <param name="p">The P parameter of the Diffie-Hellman algorithm. This is a public parameter.</param>
+            <param name="g">The G parameter of the Diffie-Hellman algorithm. This is a public parameter.</param>
+            <param name="x">The X parameter of the Diffie-Hellman algorithm. This is a private parameter. If this parameters is a null reference (<b>Nothing</b> in Visual Basic), a secret value of the default size will be generated.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="p"/> or <paramref name="g"/> is a null reference (<b>Nothing</b> in Visual Basic).</exception>
+            <exception cref="T:System.Security.Cryptography.CryptographicException"><paramref name="p"/> or <paramref name="g"/> is invalid.</exception>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellmanManaged.#ctor(System.Byte[],System.Byte[],System.Int32)">
+            <summary>
+            Initializes a new <see cref="T:Mono.Security.Cryptography.DiffieHellmanManaged"/> instance.
+            </summary>
+            <param name="p">The P parameter of the Diffie-Hellman algorithm.</param>
+            <param name="g">The G parameter of the Diffie-Hellman algorithm.</param>
+            <param name="l">The length, in bits, of the private value. If 0 is specified, the default value will be used.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="p"/> or <paramref name="g"/> is a null reference (<b>Nothing</b> in Visual Basic).</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="l"/> is invalid.</exception>
+            <exception cref="T:System.Security.Cryptography.CryptographicException"><paramref name="p"/> or <paramref name="g"/> is invalid.</exception>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellmanManaged.CreateKeyExchange">
+            <summary>
+            Creates the key exchange data.
+            </summary>
+            <returns>The key exchange data to be sent to the intended recipient.</returns>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellmanManaged.DecryptKeyExchange(System.Byte[])">
+            <summary>
+            Extracts secret information from the key exchange data.
+            </summary>
+            <param name="keyEx">The key exchange data within which the shared key is hidden.</param>
+            <returns>The shared key derived from the key exchange data.</returns>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellmanManaged.ExportParameters(System.Boolean)">
+            <summary>
+            Exports the <see cref="T:Mono.Security.Cryptography.DHParameters"/>.
+            </summary>
+            <param name="includePrivateParameters"><b>true</b> to include private parameters; otherwise, <b>false</b>.</param>
+            <returns>The parameters for <see cref="T:Mono.Security.Cryptography.DiffieHellman"/>.</returns>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellmanManaged.ImportParameters(Mono.Security.Cryptography.DHParameters)">
+            <summary>
+            Imports the specified <see cref="T:Mono.Security.Cryptography.DHParameters"/>.
+            </summary>
+            <param name="parameters">The parameters for <see cref="T:Mono.Security.Cryptography.DiffieHellman"/>.</param>
+            <exception cref="T:System.Security.Cryptography.CryptographicException"><paramref name="P"/> or <paramref name="G"/> is a null reference (<b>Nothing</b> in Visual Basic) -or- <paramref name="P"/> is not a prime number.</exception>
+        </member>
+        <member name="M:Mono.Security.Cryptography.DiffieHellmanManaged.Finalize">
+            <summary>
+            Finalize the object.
+            </summary>
+        </member>
+        <member name="P:Mono.Security.Cryptography.DiffieHellmanManaged.KeyExchangeAlgorithm">
+            <summary>
+            Gets the name of the key exchange algorithm.
+            </summary>
+            <value>The name of the key exchange algorithm.</value>
+        </member>
+        <member name="P:Mono.Security.Cryptography.DiffieHellmanManaged.SignatureAlgorithm">
+            <summary>
+            Gets the name of the signature algorithm.
+            </summary>
+            <value>The name of the signature algorithm.</value>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.ExtensionRegistry">
+            <summary>
+            Provides a simple registry of OpenID Extension namespaces to
+            the supporting IExtension type.
+            </summary>
+            <remarks>Facilitates auto-loading extensions based on data
+            received from Identity Providers.</remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ExtensionRegistry.Get(System.String)">
+            <summary>
+            Look up a plugin's Type using its namespace URI.
+            </summary>
+            <param name="name">The namespace URI to match.</param>
+            <returns>The Type matching the namespace URI.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ExtensionRegistry.Set(System.String,System.Type)">
+            <summary>
+            Add a plugin's Type to the registry. 
+            </summary>
+            <remarks>The registry is in-memory, and will only remain in the current processing context.
+            By default, ExtensionRegistry automatically registers all IExtension
+            Types shipped with the library.  If you are registering custom
+            IExtension Types, ensure you register the Type upon each page load.</remarks>
+            <param name="name">The namespace URI to register</param>
+            <param name="type">The Type to register</param>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Utility">
+            <summary>
+            Common functions used by main classes and plugins.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.EnsurePositive(System.Byte[])">
+            <summary>
+            Ensures that the byte array converts to a positive value. 
+            </summary>
+            <param name="inputBytes">Unsigned byte-array.</param>
+            <returns>A corrected byte-array.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.UnsignedToBase64(System.Byte[])">
+            <summary>
+            Positively-ensures an input byte-array and converts to a Base64 string.
+            </summary>
+            <param name="inputBytes">Unsigned byte-array.</param>
+            <returns>A Base64 string representing the byte-array.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.SplitResponse(System.String)">
+            <summary>
+            Converts HTTP response to key-value pairs.
+            </summary>
+            <param name="response">HTTP response.</param>
+            <returns>Dictionary&lt;string, string&gt; object representing information in response.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.Keyval2URL(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Converts a Dictionary&lt;string, string&gt; to a URL string.
+            </summary>
+            <param name="arr">Dictionary&lt;string, string&gt; to convert.</param>
+            <returns>A URL string.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.MakeGetURL(System.Uri,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Given a URL and a set of arguments, creates a complete and proper HTTP GET URL.
+            </summary>
+            <param name="url">Base URL</param>
+            <param name="arr">Dictionary&lt;string, string&gt; containing argument keys and values</param>
+            <returns>An HTTP GET URL that includes all supplied arguments.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.AddExtraVariables(System.String,ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Appends the cnonce variable to the end of a URL.
+            </summary>
+            <param name="url">URL to process.</param>
+            <param name="rp">StateContainer to use.</param>
+            <returns>A combined URL.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.MakeRequest(System.Uri,System.String,System.Collections.Specialized.NameValueCollection,System.String@)">
+            <summary>
+            Performs an HTTP request and returns the response.
+            </summary>
+            <param name="url">URL to make request to.</param>
+            <param name="method">Request type, either "GET" or "POST".</param>
+            <param name="pms">Dictionary&lt;string, string&gt; containing key-value pairs to send.</param>
+            <param name="actualLocation">The real URL for this request, after redirects.</param>
+            <returns>String containing HTTP response.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.MakeRequest(System.Uri,System.String@)">
+            <summary>
+            Performs an HTTP request and returns the response.
+            </summary>
+            <param name="url">URL to make request to.</param>
+            <param name="actualLocation">The final URL found after redirects.</param>
+            <returns>String containing HTTP response.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.RemoveHtmlComments(System.String)">
+            <summary>
+            Remove HTML comments from string.
+            </summary>
+            <param name="content">String containing HTML.</param>
+            <returns>String with HTML comments removed.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.HandleHttpError(System.Net.WebResponse,ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Processes errors received during HTTP requests.
+            </summary>
+            <param name="response">WebResponse object to handle.</param>
+            <param name="rp">StateContainer object where error state will be recorded.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.ValidateStatefulResponse(System.Uri,ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Validate a stateful mode response from an OpenID Provider.
+            </summary>
+            <param name="server">The OpenID Provider URL.</param>
+            <param name="rp">The StateContainer object needed to process the validation.</param>
+            <returns>Whether or not validation was successful.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.ValidateStatelessResponse(System.Uri,System.Boolean,ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Validate a stateless mode response from an OpenID Provider.
+            </summary>
+            <param name="server">The OpenID Provider</param>
+            <param name="fallback">Whether or not this is a fallback check due to a failed stateful validation attempt.</param>
+            <param name="rp">The StateContainer object containing the arguments to process.</param>
+            <returns>True if the validation is successful, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.Normalize(System.String,System.Collections.Generic.IEnumerable{ExtremeSwank.OpenId.IDiscovery})">
+            <summary>
+            Converts a supplied OpenID into two distinct entities - a normalized name and a URI
+            </summary>
+            <param name="openid">OpenID to normalize</param>
+            <param name="plugins">IDiscovery plugins to use to process the OpenID</param>
+            <returns>A populated NormalizationEntry object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.GetRedirectURL(ExtremeSwank.OpenId.StateContainer,ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult,System.Boolean)">
+            <summary>
+            Returns the URL to which the User Agent should be redirected for the initial authentication request.
+            </summary>
+            <param name="props">RequestProperties object holding the current state.</param>
+            <param name="discResult">The DiscoveryResult object created from the previous discovery process.</param>
+            <param name="immediate">Whether or not an Immediate Mode request is being generated.</param>
+            <returns>The complete URL to which the User Agent should be redirected.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.GetProviderUrl(System.String,System.Collections.Generic.IList{ExtremeSwank.OpenId.IDiscovery})">
+            <summary>
+            Retrieve the URL of the OpenID Provider using configured discovery plugins
+            </summary>
+            <returns>The URL of the OpenID Provider</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.GetRequestedMode(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Parses the arguments and returns the requested OpenID mode.
+            </summary>
+            <param name="arguments">Arguments to parse.</param>
+            <returns>The mode requested in the arguments.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.GetExtNamespaceAliases(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Matches up Extension namespace URIs to their aliases.
+            </summary>
+            <param name="arguments">Arguments received during the current request.</param>
+            <returns>A dictionary with the namespace URI as the key, and the variable name as the value.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.BuildAssociation(System.Uri,ExtremeSwank.OpenId.IAssociationPersistence,ExtremeSwank.OpenId.ProtocolVersion)">
+            <summary>
+            Negotiate a new association with the OpenID Provider and add it to persistence.
+            </summary>
+            <param name="server">OpenID Provider URL.</param>
+            <param name="associationManager">The IAssociationPersistence object to use for persistence.</param>
+            <param name="version">The OpenID Version supported by the OpenID Provider discovery process.</param>
+            <returns>True if the association was created successfully, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.CreateAssociation(System.Uri,ExtremeSwank.OpenId.IAssociationPersistence,ExtremeSwank.OpenId.ProtocolVersion,ExtremeSwank.OpenId.KeyEncryption)">
+            <summary>
+            Perform an association request with an OpenID Provider.
+            </summary>
+            <param name="server">URL to the OpenID Provider.</param>
+            <param name="associationManager">The IAssociationPersistence object to use for persistence.</param>
+            <param name="version">The ProtocolVersion to use.</param>
+            <param name="encryption">The key encryption type to use.</param>
+            <returns>Populated Association object, or null.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.GetRequiredExtensionPlugins(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Determine the Extension plugin types that need to be loaded for the current request.
+            </summary>
+            <param name="arguments">Current request arguments</param>
+            <returns>An array of types</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Utility.AutoLoadExtensionPlugins(ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Look at the current arguments and load the extension plugins needed to service
+            the request.
+            </summary>
+            <param name="rp">StateContainer object to store loaded plugins.</param>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Utility.WebRoot">
+            <summary>
+            Return a URL representing the current host
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicySchema">
+            <summary>
+            Some static methods that return authentication policy URIs.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicySchema.PhishingResistant">
+            <summary>
+            Returns the URI for Phishing-Resistant Authentication
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicySchema.MultipleFactor">
+            <summary>
+            Returns the URI for Multi-Factor Authentication
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.AuthenticationPolicySchema.PhysicalMultipleFactor">
+            <summary>
+            Returns the URI for Physical Multi-Factor Authentication
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeMode">
+            <summary>
+            Represents a mode supported by the Attribute Exchange extension.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeMode.Fetch">
+            <summary>
+            Retrieve data from the OpenID Provider.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeMode.Store">
+            <summary>
+            Request that the OpenID Provider store data.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.AXReceiver">
+            <summary>
+            Receive and process unsolicited Attribute Exchange assertion messages.
+            </summary>
+            <remarks>
+            <para>
+            Attribute Exchange specification supports subscribing to updates 
+            whenever changes are made to values stored at the OpenID Provider.  
+            Use AXReceiver to receive the updates whenever they are pushed 
+            out from the Provider.
+            </para>
+            <para>
+            Set AttributeExchange.UpdateUrl property during an Attribute Exchange
+            Store request to subscribe to changes.  If supported by the OpenID
+            Provider, the URL specified in the UpdateUrl property will be automatically
+            notified whenever the subscribed values change.
+            </para>
+            <para>
+            AttributeExchange.UpdateUrl should be set to the URL where AXReceiver
+            is configured.
+            </para>
+            </remarks>
+            <example>
+            For ASP.NET:
+            <code>
+            using ExtremeSwank.OpenId;
+            
+            public partial class _Default 
+            {
+              protected void Page_Load(object sender, EventArgs e) 
+              {
+                if (!IsPostBack) 
+                {
+                  AXReceiver axr = new AXReceiver();
+                  OpenIdUser receivedData = axr.RetrieveUser();
+                }
+              }
+            }
+            </code>
+            For other environments:
+            <code>
+            using ExtremeSwank.OpenId;
+            
+            public static class MyClass 
+            {
+              public static OpenIdUser ProcessAXResponse(NameValueCollection arguments) 
+              {
+                if (arguments == null) { throw new ArgumentNullException("arguments"); }
+                
+                // Create a new AXReceiver with the arguments
+                AXReceiver axr = new AXReceiver(arguments);
+                
+                // After processing, return the populated OpenIdUser object
+                // or null if response was invalid.
+                return axr.RetrieveUser();
+              }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.AXReceiver.#ctor">
+            <summary>
+            Creates a new instance of AXReceiver.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.AXReceiver.#ctor(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Creates a new instance of AXReceiver.
+            </summary>
+            <param name="arguments">A collection of arguments received from a request.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.AXReceiver.CheckMode">
+            <summary>
+            Whether or not the request is an OpenID assertion.
+            </summary>
+            <returns>True if it is, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.AXReceiver.ValidateResponse">
+            <summary>
+            Check with the OpenID Provider to ensure the message is valid.
+            </summary>
+            <returns>True if the validation was successful, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.AXReceiver.RetrieveUser">
+            <summary>
+            Validate the authentication response, if present.
+            </summary>
+            <returns>A populated OpenIdUser object, if the response is valid.  Null if the response
+            is invalid.</returns>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.ClientCore">
+            <summary>
+            Base class for OpenID Relying Party.
+            </summary>
+            <remarks>
+            Supports the core implementation outlined in the OpenID Specification,
+            and does not provide optional Identity discovery functions.  Inherit 
+            this class if non-Identity OpenID communication is required.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ClientCore.EnsureAspNetOnConstructor">
+            <summary>
+            Check for ASP.NET Context. If none is present, throw exception.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Thrown if ASP.NET context is not present.</exception>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ClientCore.Redirect(System.Uri)">
+            <summary>
+            If in an ASP.NET context, redirect the user to the provided URL.
+            </summary>
+            <param name="url">URL to redirect.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ClientCore.Init">
+            <summary>
+            Shared initialization method - should be used by constructor.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ClientCore.CreateRequest(System.Boolean,System.Boolean)">
+            <summary>
+            Creates the redirect URL for the OpenID authentication request.
+            </summary>
+            <param name="immediate">Create an immediate-mode request URL.</param>
+            <param name="autoRedirect">Automatically redirect the current HTTP session to the OpenID Provider.</param>
+            <returns>The redirect URL string that should be launched by the user's web browser.</returns>
+            <remarks>
+            <para>
+            Use Immediate mode to get an immediate response back from the OpenID Provider.
+            This means the OpenID Provider will not prompt the user in any way, but will
+            redirect the user's browser back with an authentication response.  If the user
+            is not currently logged in to the Provider, a "SetupNeeded" response will be
+            received here at the client.
+            </para>
+            <para>
+            Set autoRedirect to true to automatically perform an HTTP redirect on the user's
+            browser.  This option is only valid in an ASP.NET environment.  For all other
+            environments, setting this value will have no effect.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ClientCore.EnableStatefulMode(ExtremeSwank.OpenId.IAssociationPersistence,ExtremeSwank.OpenId.ISessionPersistence)">
+            <summary>
+            Enable Stateful authentication mode using supplied 
+            association and session persistence plug-ins.
+            </summary>
+            <param name="associationManager">IAssociationPersistence object to use while persisting associations from OpenID Providers.</param>
+            <param name="sessionManager">ISessionPersistence object to use while persisting user session state.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ClientCore.ValidateResponse">
+            <summary>
+            Validates an OpenID authentication response.
+            </summary>
+            <remarks>
+            <para>
+            To determine if this method should be used, look at the value
+            of the RequestedMode property, which detects the operational mode
+            requested by the current HTTP request.  
+            </para>
+            <para>
+            If RequestedMode is set to RequestedMode.IdResolution, the request
+            is an authentication response from an OpenID Provider.
+            </para>
+            <para>
+            Therefore, ValidateResponse() should be used to verify
+            the validity of the response.
+            </para>
+            </remarks>
+            <returns>True if successfully validated, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ClientCore.RetrieveUser">
+            <summary>
+            After successful validation, provides an object to hold the user information
+            </summary>
+            <returns>OpenIdUser object containing identifier and Extension data</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.ClientCore.DetectAndHandleResponse">
+            <summary>
+            Look at the current request arguments and perform work appropriately,
+            invoking events as conditions occur.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.ClientCore.LastDiscoveryResult">
+            <summary>
+            Last DiscoveryResult object created during discovery,
+            or populated manually.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.ClientCore.TrustRoot">
+            <summary>
+            Gets or sets the URL that will serve as the base root of trust - defaults to current domain
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.ClientCore.ReturnUrl">
+            <summary>
+            Gets or sets a URL to transfer user upon approval - defaults to current page
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.ClientCore.ProviderUrl">
+            <summary>
+            Gets or sets the URL of Identity Provider
+            </summary>
+            <remarks>
+            If UseDirectedIdentity is set to true, ProviderUrl should be set manually.  Otherwise, this will be
+            automatically set while discovering the claimed identifier.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.ClientCore.RequestedMode">
+            <summary>
+            Checks the current page request and returns the requested
+            mode.
+            </summary>
+            <returns>RequestedMode representing the current mode.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.ClientCore.ErrorState">
+            <summary>
+            Returns the current error state
+            </summary>
+            <returns>An ErrorCondition representing the current error state.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.ClientCore.StateContainer">
+            <summary>
+            Gets the current StateContainer object in use by this OpenIdClient.
+            </summary>
+            <remarks>
+            This should only need to be used by plugins so they can self-register
+            upon intialization.
+            </remarks>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.ClientCore.ReceivedResponse">
+            <summary>
+            A response has been received from an OpenID Provider.
+            </summary>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.ClientCore.ReceivedCancel">
+            <summary>
+            A user-initiated Cancel response has been received from an OpenID Provider.
+            </summary>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.ClientCore.ValidationSucceeded">
+            <summary>
+            The authentication response has been validated successfully.
+            </summary>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.ClientCore.ValidationFailed">
+            <summary>
+            The authentication response has failed validation.
+            </summary>
+        </member>
+        <member name="E:ExtremeSwank.OpenId.ClientCore.ReceivedSetupNeeded">
+            <summary>
+            Immediate mode request has failed, should issue a standard
+            authentication request.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.ProtocolVersion">
+            <summary>
+            Represents a version of the OpenID protocol specification.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ProtocolVersion.Invalid">
+            <summary>
+            An unsupported or invalid version of OpenID specification.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ProtocolVersion.V1Dot1">
+            <summary>
+            Represents OpenID specification version 1.1.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ProtocolVersion.V2Dot0">
+            <summary>
+            Represents OpenID specification version 2.0.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema">
+            <summary>
+            Most common schema definitions for Attribute Exchange.
+            Defined by axschema.org.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.UserName">
+            <summary>
+            Subject's alias or "screen" name 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.FullName">
+            <summary>
+            Full name of subject
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.NamePrefix">
+            <summary>
+            Honorific prefix for the subject's name
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.FirstName">
+            <summary>
+            First or given name of subject
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.LastName">
+            <summary>
+            Last name or surname of subject
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.MiddleName">
+            <summary>
+            Middle name(s) of subject
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.NameSuffix">
+            <summary>
+            Suffix of subject's name
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.CompanyName">
+            <summary>
+            Company name (employer)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.JobTitle">
+            <summary>
+            Employee title
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.BirthDate">
+            <summary>
+            Date of birth
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.BirthYear">
+            <summary>
+            Year of birth (four digits)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.BirthMonth">
+            <summary>
+            Month of birth (1-12)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.Birthday">
+            <summary>
+            Day of birth (1-31)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.PhonePreferred">
+            <summary>
+            Main phone number (preferred)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.PhoneHome">
+            <summary>
+            Home phone number 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.PhoneWork">
+            <summary>
+            Business phone number
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.PhoneMobile">
+            <summary>
+            Cellular (or mobile) phone number
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.PhoneFax">
+            <summary>
+            Fax number 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.HomeAddress">
+            <summary>
+            Home postal address: street number, name and apartment number
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.HomeAddress2">
+            <summary>
+            Home postal address: supplementary information 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.HomeCity">
+            <summary>
+            Home city name
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.HomeState">
+            <summary>
+            Home state or province name 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.HomeCountry">
+            <summary>
+            Home country code in ISO.3166.1988 (alpha 2) format 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.HomePostalCode">
+            <summary>
+            Home postal code; region specific format
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.WorkAddress">
+            <summary>
+            Business postal address: street number, name and apartment number 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.WorkAddress2">
+            <summary>
+            Business postal address: supplementary information
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.WorkCity">
+            <summary>
+            Business city name 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.WorkState">
+            <summary>
+            Business state or province name
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.WorkCountry">
+            <summary>
+            Business country code in ISO.3166.1988 (alpha 2) format
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.WorkPostalCode">
+            <summary>
+            Business postal or zip code; region specific format
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.Email">
+            <summary>
+            Internet SMTP email address as per RFC2822 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.IMAim">
+            <summary>
+            AOL instant messaging service handle
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.IMIcq">
+            <summary>
+            ICQ instant messaging service handle 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.IMMsn">
+            <summary>
+            MSN instant messaging service handle
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.IMYahoo">
+            <summary>
+            Yahoo! instant messaging service handle
+            </summary>        
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.IMJabber">
+            <summary>
+            Jabber instant messaging service handle
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.IMSkype">
+            <summary>
+            Skype instant messaging service handle
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.UrlWebsite">
+            <summary>
+            Web site URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.UrlBlog">
+            <summary>
+            Blog URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.UrlLinkedIn">
+            <summary>
+            LinkedIn URL
+            </summary>        
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.UrlAmazon">
+            <summary>
+            Amazon URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.UrlFlickr">
+            <summary>
+            Flickr URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.UrlDelicious">
+            <summary>
+            del.icio.us URL
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.SpokenName">
+            <summary>
+            Spoken name (web URL to media file)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.AudioGreeting">
+            <summary>
+            Audio greeting (web URL to media file)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.VideoGreeting">
+            <summary>
+            Video greeting (web URL to media file)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.Image">
+            <summary>
+            Image (web URL); unspecified dimension
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.ImageSquare">
+            <summary>
+            Image (web URL) with equal width and height
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.Image4To3">
+            <summary>
+            Image (web URL) 4:3 aspect ratio - landscape
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.Image3To4">
+            <summary>
+            Image (web URL) 3:4 aspect ratio - portrait
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.Favicon">
+            <summary>
+            Image (web URL); favicon format as per FAVICON-W3C. The format for the image must be 16x16 pixels or 32x32 pixels, using either 8-bit or 24-bit colors. The format of the image must be one of PNG (a W3C standard), GIF, or ICO. 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.Gender">
+            <summary>
+            Gender, either "M" or "F"
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.Language">
+            <summary>
+            Preferred language, as per RFC4646 
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.TimeZone">
+            <summary>
+            Home time zone information (as specified in zoneinfo)
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeSchema.Biography">
+            <summary>
+            Biography (text) 
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.IXrdsConsumer">
+            <summary>
+            Interface used for Extension plugins that utilize XRDS data directly.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.IXrdsConsumer.ProcessXrds(System.Xml.XPath.IXPathNavigable)">
+            <summary>
+            Process the XRDS data provided by the <see cref="T:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds"/> Discovery plugin.
+            </summary>
+            <param name="xrdsDoc">XmlDocument object containing XRDS document.</param>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.IXrdsConsumer.Parent">
+            <summary>
+            Parent <see cref="T:ExtremeSwank.OpenId.StateContainer"/> object.
+            </summary>
+        </member>
+        <member name="T:Mono.Security.Cryptography.DHParameters">
+            <summary>
+            Represents the parameters of the Diffie-Hellman algorithm.
+            </summary>
+        </member>
+        <member name="F:Mono.Security.Cryptography.DHParameters.P">
+            <summary>
+            Represents the public <b>P</b> parameter of the Diffie-Hellman algorithm.
+            </summary>
+        </member>
+        <member name="F:Mono.Security.Cryptography.DHParameters.G">
+            <summary>
+            Represents the public <b>G</b> parameter of the Diffie-Hellman algorithm.
+            </summary>
+        </member>
+        <member name="F:Mono.Security.Cryptography.DHParameters.X">
+            <summary>
+            Represents the private <b>X</b> parameter of the Diffie-Hellman algorithm.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Discovery.NormalizationEntry">
+            <summary>
+            Holds the three different usable forms of a given OpenID Identity.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.NormalizationEntry.FriendlyId">
+            <summary>
+            Gets or sets the database-compatible friendly identity name.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.NormalizationEntry.NormalizedId">
+            <summary>
+            Gets or sets the ID, normalized per the OpenID specification
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.NormalizationEntry.DiscoveryUrl">
+            <summary>
+            Gets or sets the discovery URL that should be used by
+            the discovery engine.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Persistence.SessionSessionManager">
+            <summary>
+            Provides session persistence to OpenID functions using the ASP.NET Session object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.SessionSessionManager.Nonce">
+            <summary>
+            Gets or sets the nonce value used to protect against replay attacks.
+            </summary>
+        </member>
+        <member name="T:Mono.Math.Prime.Generator.PrimeGeneratorBase">
+            <summary>
+            Base class used to generate prime numbers.
+            </summary>
+        </member>
+        <member name="M:Mono.Math.Prime.Generator.PrimeGeneratorBase.PostTrialDivisionTests(Mono.Math.BigInteger)">
+            <summary>
+            Performs primality tests on bi, assumes trial division has been done.
+            </summary>
+            <param name="bi">A BigInteger that has been subjected to and passed trial division</param>
+            <returns>False if bi is composite, true if it may be prime.</returns>
+            <remarks>The speed of this method is dependent on Confidence</remarks>
+        </member>
+        <member name="M:Mono.Math.Prime.Generator.PrimeGeneratorBase.GenerateNewPrime(System.Int32)">
+            <summary>
+            Abstract method.  Generates a new prime number given a provided number of bits.
+            </summary>
+            <param name="bits">Integer representing the number of bits.</param>
+            <returns>A BigInteger object representing the prime number.</returns>
+        </member>
+        <member name="P:Mono.Math.Prime.Generator.PrimeGeneratorBase.Confidence">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mono.Math.Prime.Generator.PrimeGeneratorBase.PrimalityTest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mono.Math.Prime.Generator.PrimeGeneratorBase.TrialDivisionBounds">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Persistence.SqlAssociationManager">
+            <summary>
+            Manages associations with OpenID Providers, uses SQL Server for persistence.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Persistence.DBAssociationManager">
+            <summary>
+            Manages associations with OpenID Providers, can use any database driver
+            implementing the IDbConnection interface.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.#ctor(System.Data.IDbConnection,System.String)">
+            <summary>
+            Creates a new OdbcAssociationManager instance.
+            </summary>
+            <param name="connection">IDbConnection object providing connection to the database.</param>
+            <param name="tableNamePrefix">Table name prefix.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.#ctor">
+            <summary>
+            Creates a new OdbcAssociationManager instance.
+            Should only be used by inheriting classes.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.Remove(ExtremeSwank.OpenId.Persistence.Association)">
+            <summary>
+            Removes an association from the database.
+            </summary>
+            <param name="assoc">Association to remove.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.Add(ExtremeSwank.OpenId.Persistence.Association)">
+            <summary>
+            Add an assocation to the database.
+            </summary>
+            <param name="association">Association to add.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.FindByHandle(System.String)">
+            <summary>
+            Locate an association by its handle.
+            </summary>
+            <param name="handle">The association's handle.</param>
+            <returns>A populated Association object, or null if not found.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.FindByServer(System.String)">
+            <summary>
+            Locate an association by its OpenID Provider URL.
+            </summary>
+            <param name="server">The OpenID Provider URL.</param>
+            <returns>A populated Association object, or null if not found.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.ToAssociation(System.Data.IDataRecord)">
+            <summary>
+            Transforms the current record in a DataReader object into an Association object.
+            </summary>
+            <param name="dr">The DataReader object use.</param>
+            <returns>A populated Association object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.Cleanup">
+            <summary>
+            Remove all expired associations from the database.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.BuildDB">
+            <summary>
+            Create the association table in the database.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.FixSqlIn(System.String)">
+            <summary>
+            Ensures a string does not contain characters that could
+            prematurely terminate an SQL statement.
+            </summary>
+            <param name="sql">The string to fix.</param>
+            <returns>A SQL-compatible string.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBAssociationManager.FixSqlOut(System.String)">
+            <summary>
+            Converts a SQL-compatible value string into its original
+            value.
+            </summary>
+            <param name="sql">The value string to fix.</param>
+            <returns>The original string value.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.DBAssociationManager.DatabaseConnection">
+            <summary>
+            The database connection object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.DBAssociationManager.TableName">
+            <summary>
+            The name of the associations table.  Set automatically by the _tablePrefix property.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.DBAssociationManager.TablePrefix">
+            <summary>
+            Sets the prefix for the table names.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.SqlAssociationManager.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new SqlAssociationManager instance.
+            </summary>
+            <param name="connectionString">SQL Server connection string.</param>
+            <param name="tableNamePrefix">Table name prefix.</param>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeItem">
+            <summary>
+            Intermediate object used while performing Fetch or Store operations.
+            Represents one data item with one or more values.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeItem.IdUri">
+            <summary>
+            Gets or sets the Identifier URI for this item.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeItem.Alias">
+            <summary>
+            Gets or sets short alias which references the supplied Identifier URI for this item.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeItem.Count">
+            <summary>
+            Gets or sets the number of values in this item.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeItem.Values">
+            <summary>
+            Gets or sets the values for this item.  Used only during Store requests.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchangeItem.Required">
+            <summary>
+            Gets or sets whether or not a response for this item is required.  Used only during Fetch requests.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.ProtocolUri">
+            <summary>
+            Central list of namespace URIs used for OpenID Extensions.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ProtocolUri.AttributeExchange1Dot0">
+            <summary>
+            Attribute Exchange extension 1.0
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ProtocolUri.SimpleRegistration1Dot1">
+            <summary>
+            Simple Registration extension 1.1
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ProtocolUri.AuthenticationPolicy1Dot0">
+            <summary>
+            Provider Authentication Policy extension 1.0
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ProtocolUri.OpenId2Dot0">
+            <summary>
+            OpenID 2.0
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ProtocolUri.IdentifierSelect">
+            <summary>
+            Identifier Select - used as Identiy for Directed Identity requests
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ProtocolUri.OAuth1Dot0">
+            <summary>
+            OAuth+OpenID 1.0
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.ErrorCondition">
+            <summary>
+            Possible error conditions.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ErrorCondition.NoErrors">
+            <summary>
+            No errors have occurred.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ErrorCondition.NoServersFound">
+            <summary>
+            No servers were found during the discovery process.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ErrorCondition.HttpError">
+            <summary>
+            An HTTP error occurred when attempting to contact the IdP.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ErrorCondition.SessionTimeout">
+            <summary>
+            The window to complete the authentication request has expired.
+            User should try the request again.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ErrorCondition.RequestRefused">
+            <summary>
+            Request has been actively refused by the IdP.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ErrorCondition.NoIdSpecified">
+            <summary>
+            No ID was specified.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.ErrorCondition.RequestCanceled">
+            <summary>
+            User cancelled the OpenID authentication request at the Identity Provider.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Persistence.ApplicationAssociationManager">
+            <summary>
+            Manages associations with OpenID Providers, using the ASP.NET Application object for persistence.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.ApplicationAssociationManager.Init">
+            <summary>
+            Initializes the in-memory associations table.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.ApplicationAssociationManager.Remove(ExtremeSwank.OpenId.Persistence.Association)">
+            <summary>
+            Removes an association from the associations table.
+            </summary>
+            <param name="assoc">Association to remove from persistence.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.ApplicationAssociationManager.Add(ExtremeSwank.OpenId.Persistence.Association)">
+            <summary>
+            Adds a new association to the associations table.
+            </summary>
+            <param name="association">The association entry to store.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.ApplicationAssociationManager.ToAssociation(System.Data.DataRow)">
+            <summary>
+            Translates a DataRow matching the correct schema
+            into an Association object.
+            </summary>
+            <param name="dr">DataRow containing source data.</param>
+            <returns>Populated Association object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.ApplicationAssociationManager.FindByHandle(System.String)">
+            <summary>
+            Find an association by its handle.
+            </summary>
+            <param name="handle">The association handle.</param>
+            <returns>A DataRow containing the association entry.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.ApplicationAssociationManager.FindByServer(System.String)">
+            <summary>
+            Find an association by server name.
+            </summary>
+            <param name="server">The OpenID server endpoint URL</param>
+            <returns>An Association object containing the association data</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.ApplicationAssociationManager.Cleanup">
+            <summary>
+            Removes expired associations from the associations table
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Quirks">
+            <summary>
+            Functions that deal with quirks specific to certain OpenID Providers
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Quirks.CheckOpenIDMode(System.String,ExtremeSwank.OpenId.AuthenticationMode)">
+            <summary>
+            Check the OpenID identity URL and confirm whether or not the authentication
+            mode should be changed due to quirks in the OpenID Provider's implementation.
+            </summary>
+            <param name="endPoint">OpenID identity URL</param>
+            <param name="mode">Mode currently set</param>
+            <returns>Correct AuthenticationMode for the provider</returns>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.OpenIdClient">
+             <summary>
+             Provides an OpenID Relying Party (Consumer) compatible with OpenID 1.1 and 2.0 specifications.
+             </summary>
+             <example>
+             Here is a simple procedural example of using OpenIdClient in an ASP.NET application:
+             <code>
+             using ExtremeSwank.OpenID;
+             
+             public partial class _Default
+             {
+                protected void LoginButton_Click(object sender, EventArgs e)
+                {
+                    OpenIdClient openid = new OpenIdClient();
+                    openid.Identity = LoginBox1.Text;
+                    openid.CreateRequest();
+                }
+                protected void LogOutButton_Click(object sender, EventArgs e)
+                {
+                    Session["OpenID_UserObject"] = null;
+                    // Handle user logout here
+                }
+                protected void Page_Load(object sender, EventArgs e)
+                {
+                    if (!IsPostBack)
+                    {
+                        OpenIdClient openid = new OpenIdClient();
+                        switch (openid.RequestedMode)
+                        {
+                           case RequestedMode.IdResolution:
+                                if (openid.ValidateResponse())
+                                {
+                                    OpenIdUser thisuser = openid.RetrieveUser();
+                                    Session["OpenID_UserObject"] = thisuser;
+                                    // Authentication successful - Perform login here
+                                }
+                                else
+                                {
+                                    // Authentication failure handled here
+                                }
+                                break;
+                            case RequestedMode.CanceledByUser:
+                                // User has cancelled authentication - handle here
+                                break;
+                        }
+                    }
+                }
+             }
+             </code>
+             A more advanced method, based on .NET events, is below:
+             <code>
+             using ExtremeSwank.OpenID;
+             using ExtremeSwank.OpenID.Plugins.Extensions;
+            
+             public partial class _Default
+             {
+            
+                protected void Page_Load(object sender, EventArgs e)
+                {
+                    // If this is not a postback, start up the Consumer
+                    // and handle any OpenID request, if present
+                    if (!IsPostBack)
+                    {
+                        OpenIdClient openid = GetConsumer();
+                        openid.DetectAndHandleResponse();
+                    }
+                }
+            
+                protected OpenIdClient GetConsumer()
+                {
+                    // Initialize the OpenID Consumer
+                    OpenIdClient openid = new OpenIdClient();
+            
+                    // Subscribe to all the events that could occur
+                    openid.ValidationSucceeded += new EventHandler(openid_ValidationSucceeded);
+                    openid.ValidationFailed += new EventHandler(openid_ValidationFailed);
+                    openid.ReceivedCancel += new EventHandler(openid_ReceivedCancel);
+            
+                    return openid;
+                }
+            
+                protected void Button_Click(object sender, EventArgs e)
+                {
+                    OpenIdClient openid = GetConsumer();
+            
+                    // Set Identity to the text of a field
+                    openid.Identity = openid_url.Text;
+            
+                    openid.CreateRequest();
+                }
+            
+                protected void openid_ReceivedCancel(object sender, EventArgs e)
+                {
+                    // Request has been cancelled. Respond appropriately.
+                }
+            
+                protected void openid_ValidationSucceeded(object sender, EventArgs e)
+                {
+                    // User has been validated!  Respond appropriately.
+                    OpenIdUser UserObject = ((OpenIdClient)sender).RetrieveUser();
+                }
+            
+                protected void openid_ValidationFailed(object sender, EventArgs e)
+                {
+                    // Validating the user has failed.  Respond appropriately.
+                }
+             }
+             </code>
+             For non-ASP.NET environments:
+             <code>
+             IAssociationPersistence associationManager;
+             ISessionPersistence sessionManager;
+              
+             public MyObject() 
+             {
+                 // Create the association manager.
+                 // Note that IAssociationPeristence object is only needed if OpenIdClient.EnableStatefulMode()
+                 // is used.
+                 string dsnstr = "Driver={SQL Server};Server=SERVER\\INSTANCE;Database=OpenIDDatabase;Uid=sa;Pwd=password;"
+                 associationManager = new OdbcAssociationManager(dsnstr, "Prefix_");
+                 // Use the SingularSessionManager for situations where the session does not actually
+                 // need to be persisted, assuming that this instance will survive the entire OpenID
+                 // authentication lifecycle.  DbSessionManager can also be used if you want to
+                 // save session state into a database.
+                 // Note that ISessionPersistence object is only needed if OpenIdClient.EnableStatefulMode()
+                 // is used.
+                 sessionManager = new SingularSessionManager();
+             }
+             
+             public OpenIdClient SetupConsumer(NameValueCollection arguments) 
+             {
+                 // Create a new OpenIdClient object
+                 OpenIdClient openid = new OpenIdClient(arguments);
+                 
+                 // Enable Stateful mode.  If Stateful mode is not desired, just omit
+                 // this step.
+                 openid.EnableStatefulMode(associationManager, sessionManager);    
+                 
+                 openid.TrustRoot = "http://myserver.com/";
+                 openid.ReturnUrl = "http://myserver.com/myPage";
+                 return openid;
+             }
+             
+             // Discover the supplied OpenID identity's Provider URL, build and
+             // return a redirect URL for the web browser.
+             public string RetrieveAuthenticationUrl(string identity) 
+             {
+                 OpenIdClient openid = SetupConsumer(new NameValueCollection());
+                 openid.Identity = identity;
+                 
+                 // Discover the supplied OpenID and return the redirect URL
+                 return openid.CreateRequest(false, false);
+             }
+             
+             // An authentication response has been received from the OpenID Provider
+             // by way of the user's web browser.  Process the data in the response.
+             // If the response is valid, return an OpenIdUser object containing
+             // the authentication details.
+             public OpenIdUser ProcessAuthenticationResponse(NameValueCollection arguments) 
+             {
+                 OpenIdClient openid = SetupConsumer(arguments);
+                 switch (openid.RequestedMode) 
+                 {
+                     case RequestedMode.IdResolution:
+                         if (openid.ValidateResponse()) {
+                             OpenIdUser thisuser = openid.RetrieveUser();
+                             return thisuser;
+                         }
+                         break;
+                 }
+                 return null;
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdClient.CreateRequest">
+            <summary>
+            Creates the redirect URL for the OpenID authentication request,
+            and, if in an ASP.NET context, will automatically redirects the 
+            user's web browser to the OpenID Provider.
+            </summary>
+            <returns>The redirect URL string that should be launched by the user's web browser.</returns>
+            <remarks>
+            Uses standard "checkid_setup" mode for authentication.  If user
+            is not logged in to the OpenID Provider, the Provider is able
+            to interact as needed.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdClient.CreateRequest(System.Boolean,System.Boolean)">
+            <summary>
+            Creates the redirect URL for the OpenID authentication request.
+            </summary>
+            <param name="immediate">Create an immediate-mode request URL.</param>
+            <param name="autoRedirect">Automatically redirect the current HTTP session to the OpenID Provider.</param>
+            <returns>The redirect URL string that should be launched by the user's web browser.</returns>
+            <remarks>
+            <para>
+            Use Immediate mode to get an immediate response back from the OpenID Provider.
+            This means the OpenID Provider will not prompt the user in any way, but will
+            redirect the user's browser back with an authentication response.  If the user
+            is not currently logged in to the Provider, a "SetupNeeded" response will be
+            received here at the client.
+            </para>
+            <para>
+            Set autoRedirect to true to automatically perform an HTTP redirect on the user's
+            browser.  This option is only valid in an ASP.NET environment.  For all other
+            environments, setting this value will have no effect.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdClient.ValidateResponse">
+            <summary>
+            Validates an OpenID authentication response.
+            </summary>
+            <remarks>
+            <para>
+            To determine if this method should be used, look at the value
+            of the RequestedMode property, which detects the operational mode
+            requested by the current HTTP request.  
+            </para>
+            <para>
+            If RequestedMode is set to RequestedMode.IdResolution, the request
+            is an authentication response from an OpenID Provider.
+            </para>
+            <para>
+            Therefore, ValidateResponse() should be used to verify
+            the validity of the response.
+            </para>
+            </remarks>
+            <returns>True if successfully authenticated, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdClient.IsValidIdentity">
+            <summary>
+            Independently performs discovery on the supplied OpenID and determines whether
+            or not it is valid.
+            </summary>
+            <remarks>This is a free operation.  If you invoke IsValidIdentity(), the discovered server URL
+            is cached.  Running CreateRequest() will skip server discovery and move directly on to 
+            redirect URL generation.</remarks>
+            <returns>True if discovery was successful, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdClient.Init">
+            <summary>
+            Initialize the OpenIdClient object.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdClient.SetupDirectedIdentity">
+            <summary>
+            When Directed Identity is enabled, populate the LastDiscoveryResult
+            variable with fake discovery data.
+            </summary>
+            <remarks>
+            This is needed, as discovery does not occur in Directed Identity 
+            mode.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdClient.#ctor">
+            <summary>
+            Provides a new OpenIdClient object with default settings.
+            </summary>
+            <remarks>
+            <para>
+            Default settings assumes an ASP.NET environment, with
+            Stateless authentication.  Use EnableStatefulMode() to
+            switch to Stateful mode.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdClient.#ctor(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Provides a new OpenIdClient object using a custom set of request arguments.
+            </summary>
+            <remarks>
+            Stateless mode is enabled by default.  Use EnableStatefulMode() to switch
+            to Stateful mode.
+            </remarks>
+            <param name="requestArguments">NameValueCollection containing arguments for this request.</param>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.OpenIdClient.Identity">
+            <summary>
+            Gets or sets the OpenID idenitifer and normalizes the value
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.OpenIdClient.UseDirectedIdentity">
+            <summary>
+            Set to true to enforce use of Directed Identity.
+            </summary>
+            <remarks>
+            If set to true, ProviderUrl must be explicitly set.
+            </remarks>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.IdentityAuthentication">
+            <summary>
+            Implements the optional "identity" and "claimed_id" fields.
+            Loaded automatically by <see cref="T:ExtremeSwank.OpenId.OpenIdClient"/>.
+            </summary>
+            <remarks>
+            <para>
+            OpenID 2.0 includes support for extensions that do not necessarily
+            require that an Identity be authenticated.  This can be used in
+            some cases where you want the Consumer and the OpenID Provider
+            to exchange information that does not involve a specific user
+            account.
+            </para>
+            <para>
+            As of this writing, there are currently no OpenID extensions 
+            which use this feature of the protocol.
+            </para>
+            <para>
+            This extension plug-in must be used for OpenID 1.1 servers, and
+            is optional for OpenID 2.0 servers, under the conditions stated above.  
+            Should only be omitted if another Extension plug-in is used, and the 
+            extension in question does not require identity assertion.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.IdentityAuthentication.BuildAuthorizationData(ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult)">
+            <summary>
+            Gets the information that will be sent in the authentication
+            request to the OpenID Provider.
+            </summary>
+            <param name="discResult">The DiscoveryResult object to use.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.IdentityAuthentication.Validation">
+            <summary>
+            After a response has been received from the Identity Provider,
+            performs a extension or plug-in specific check to ensure the
+            response is valid.
+            </summary>
+            <returns>True if valid, false if not.</returns>
+            <remarks>
+            If the response is found to be invalid, OpenIdClient will
+            fail authentication validation.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.IdentityAuthentication.PopulateUserObject(ExtremeSwank.OpenId.OpenIdUser)">
+            <summary>
+            Gets the user object data needed to populate an <see cref="T:ExtremeSwank.OpenId.OpenIdUser"/> object.
+            </summary>
+            <remarks>
+            Specifically sets the Identity and BaseIdentity properties of
+            the OpenIdUser object.
+            </remarks>
+            <param name="userObject">The OpenIdUser object to populate.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.IdentityAuthentication.#ctor(ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Creates a new Authentication plugin and registers it with a StateContainer object.
+            </summary>
+            <param name="state">Parent <see cref="T:ExtremeSwank.OpenId.StateContainer"/> object to attach.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.IdentityAuthentication.#ctor(ExtremeSwank.OpenId.ClientCore)">
+            <summary>
+            Creates a new Authentication plugin and registers it with ClientCore object.
+            </summary>
+            <param name="client">The <see cref="T:ExtremeSwank.OpenId.ClientCore"/> object to attach.</param>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.IdentityAuthentication.Name">
+            <summary>
+            Gets the human-readable name of this plug-in.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.IdentityAuthentication.Parent">
+            <summary>
+            Gets the parent StateContainer object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.IdentityAuthentication.NamespaceUri">
+            <summary>
+            Gets the extension URI that this plug-in implements.
+            </summary>
+        </member>
+        <member name="T:Mono.Math.Prime.Generator.NextPrimeFinder">
+            <summary>
+            Finds the next prime after a given number.
+            </summary>
+        </member>
+        <member name="T:Mono.Math.BigInteger">
+            <summary>
+            Represents a very large integer.
+            </summary>
+        </member>
+        <member name="F:Mono.Math.BigInteger.DEFAULT_LEN">
+            <summary>
+            Default length of a BigInteger in bytes
+            </summary>
+        </member>
+        <member name="F:Mono.Math.BigInteger.length">
+            <summary>
+            The Length of this BigInteger
+            </summary>
+        </member>
+        <member name="F:Mono.Math.BigInteger.data">
+            <summary>
+            The data for this BigInteger
+            </summary>
+        </member>
+        <member name="F:Mono.Math.BigInteger.smallPrimes">
+            <summary>
+            	Table of primes below 2000.
+            </summary>
+            <remarks>
+            	<para>
+            	This table was generated using Mathematica 4.1 using the following function:
+            	</para>
+            	<para>
+            		<code>
+            		PrimeTable [x_] := Prime [Range [1, PrimePi [x]]]
+            		PrimeTable [6000]
+            		</code>
+            	</para>
+            </remarks>
+        </member>
+        <member name="M:Mono.Math.BigInteger.GenerateRandom(System.Int32,System.Security.Cryptography.RandomNumberGenerator)">
+            <summary>
+            Generates a new, random BigInteger of the specified length.
+            </summary>
+            <param name="bits">The number of bits for the new number.</param>
+            <param name="rng">A random number generator to use to obtain the bits.</param>
+            <returns>A random number of the specified length.</returns>
+        </member>
+        <member name="M:Mono.Math.BigInteger.GenerateRandom(System.Int32)">
+            <summary>
+            Generates a new, random BigInteger of the specified length using the default RNG crypto service provider.
+            </summary>
+            <param name="bits">The number of bits for the new number.</param>
+            <returns>A random number of the specified length.</returns>
+        </member>
+        <member name="M:Mono.Math.BigInteger.Randomize(System.Security.Cryptography.RandomNumberGenerator)">
+            <summary>
+            Randomizes the bits in "this" from the specified RNG.
+            </summary>
+            <param name="rng">A RNG.</param>
+        </member>
+        <member name="M:Mono.Math.BigInteger.Randomize">
+            <summary>
+            Randomizes the bits in "this" from the default RNG.
+            </summary>
+        </member>
+        <member name="M:Mono.Math.BigInteger.TestBit(System.UInt32)">
+            <summary>
+            Tests if the specified bit is 1.
+            </summary>
+            <param name="bitNum">The bit to test. The least significant bit is 0.</param>
+            <returns>True if bitNum is set to 1, else false.</returns>
+        </member>
+        <member name="M:Mono.Math.BigInteger.Normalize">
+            <summary>
+                Normalizes this by setting the length to the actual number of
+                uints used in data and by setting the sign to Sign.Zero if the
+                value of this is 0.
+            </summary>
+        </member>
+        <member name="M:Mono.Math.BigInteger.NextHighestPrime(Mono.Math.BigInteger)">
+            <summary>
+            Generates the smallest prime >= bi
+            </summary>
+            <param name="bi">A BigInteger</param>
+            <returns>The smallest prime >= bi. More mathematically, if bi is prime: bi, else Prime [PrimePi [bi] + 1].</returns>
+        </member>
+        <member name="M:Mono.Math.BigInteger.Incr2">
+            <summary>
+            Increments this by two
+            </summary>
+        </member>
+        <member name="T:Mono.Math.BigInteger.Kernel">
+            <summary>
+            Low level functions for the BigInteger
+            </summary>
+        </member>
+        <member name="M:Mono.Math.BigInteger.Kernel.AddSameSign(Mono.Math.BigInteger,Mono.Math.BigInteger)">
+            <summary>
+            Adds two numbers with the same sign.
+            </summary>
+            <param name="bi1">A BigInteger</param>
+            <param name="bi2">A BigInteger</param>
+            <returns>bi1 + bi2</returns>
+        </member>
+        <member name="M:Mono.Math.BigInteger.Kernel.Compare(Mono.Math.BigInteger,Mono.Math.BigInteger)">
+            <summary>
+            Compares two BigInteger
+            </summary>
+            <param name="bi1">A BigInteger</param>
+            <param name="bi2">A BigInteger</param>
+            <returns>The sign of bi1 - bi2</returns>
+        </member>
+        <member name="M:Mono.Math.BigInteger.Kernel.SingleByteDivideInPlace(Mono.Math.BigInteger,System.UInt32)">
+            <summary>
+            Performs n / d and n % d in one operation.
+            </summary>
+            <param name="n">A BigInteger, upon exit this will hold n / d</param>
+            <param name="d">The divisor</param>
+            <returns>n % d</returns>
+        </member>
+        <member name="M:Mono.Math.BigInteger.Kernel.Multiply(System.UInt32[],System.UInt32,System.UInt32,System.UInt32[],System.UInt32,System.UInt32,System.UInt32[],System.UInt32)">
+            <summary>
+            Multiplies the data in x [xOffset:xOffset+xLen] by
+            y [yOffset:yOffset+yLen] and puts it into
+            d [dOffset:dOffset+xLen+yLen].
+            </summary>
+            <remarks>
+            This code is unsafe! It is the caller's responsibility to make
+            sure that it is safe to access x [xOffset:xOffset+xLen],
+            y [yOffset:yOffset+yLen], and d [dOffset:dOffset+xLen+yLen].
+            </remarks>
+        </member>
+        <member name="M:Mono.Math.BigInteger.Kernel.MultiplyMod2p32pmod(System.UInt32[],System.Int32,System.Int32,System.UInt32[],System.Int32,System.Int32,System.UInt32[],System.Int32,System.Int32)">
+            <summary>
+            Multiplies the data in x [xOffset:xOffset+xLen] by
+            y [yOffset:yOffset+yLen] and puts the low mod words into
+            d [dOffset:dOffset+mod].
+            </summary>
+            <remarks>
+            This code is unsafe! It is the caller's responsibility to make
+            sure that it is safe to access x [xOffset:xOffset+xLen],
+            y [yOffset:yOffset+yLen], and d [dOffset:dOffset+mod].
+            </remarks>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Persistence.DBSessionManager">
+            <summary>
+            Manages data needed on a per-user basis for Stateful authentication.
+            Can use any database driver implementing the IDbConnection interface.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBSessionManager.#ctor(System.Data.IDbConnection,System.String,System.String)">
+            <summary>
+            Creates a new DbSessionManager instance.
+            </summary>
+            <param name="connection">IDbConnection object providing connection to the database.</param>
+            <param name="tablePrefix">Table name prefix.</param>
+            <param name="sessionId">Associated session ID.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBSessionManager.#ctor">
+            <summary>
+            Creates a new DbSessionManager instance.
+            Should only be used by inheriting classes.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBSessionManager.BuildDB">
+            <summary>
+            Create the session table in the database.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBSessionManager.FixSqlIn(System.String)">
+            <summary>
+            Ensures a string does not contain characters that could
+            prematurely terminate an SQL statement.
+            </summary>
+            <param name="sql">The string to fix.</param>
+            <returns>A SQL-compatible string.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.DBSessionManager.FixSqlOut(System.String)">
+            <summary>
+            Converts a SQL-compatible value string into its original
+            value.
+            </summary>
+            <param name="sql">The value string to fix.</param>
+            <returns>The original string value.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.DBSessionManager.SessionId">
+            <summary>
+            The unique identifier for this session.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.DBSessionManager.DatabaseConnection">
+            <summary>
+            The database connection object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.DBSessionManager.TableName">
+            <summary>
+            The name of the sessions table.  Set automatically by the _tablePrefix property.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.DBSessionManager.TablePrefix">
+            <summary>
+            Sets the prefix for the table names.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.DBSessionManager.Nonce">
+            <summary>
+            Gets or sets the nonce value used to protect against replay attacks.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration">
+            <summary>
+            Provides support for the Simple Registration extension.
+            </summary>
+            <remarks>
+            Not all OpenID Providers support all OpenID extensions.  If the expected data is
+            not returned after a successful request, the OpenID Provider may not support this
+            extension.
+            </remarks>
+            <example>
+            Before using <see cref="M:ExtremeSwank.OpenId.ClientCore.CreateRequest(System.Boolean,System.Boolean)"/>, create and configure
+            this plug-in:
+            <code>
+            OpenIdClient client = new OpenIdClient();
+            SimpleRegistration sr = new AttributeExchange(client);
+            
+            // Add required items
+            sr.AddRequiredFields(SimpleRegistrationFields.Email,
+                                 SimpleRegistrationFields.FullName);
+            
+            // Add optional items
+            sr.AddOptionalFields(SimpleRegistrationFields.Gender,
+                                 SimpleRegistrationFields.DateOfBirth);
+            
+            client.CreateRequest();
+            </code>
+            When receiving the response from the OpenID Provider:
+            <code>
+            OpenIdUser user = client.RetrieveUser();
+            string email = user.GetValue(SimpleRegistrationFields.Email);
+            string fullName = user.GetValue(SimpleRegistrationFields.FullName);
+            string gender = user.GetValue(SimpleRegistrationFields.Gender);
+            string dateOfBirth = user.GetValue(SimpleRegistrationFields.DateOfBirth);
+            </code>
+            </example>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.BuildAuthorizationData(ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult)">
+            <summary>
+            Dictionary&lt;string, string&gt; containing key-value pairs that will be passed
+            during initial authentication request to Identity Provider.
+            </summary>
+            <param name="discResult">The DiscoveryResult object to use.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.Validation">
+            <summary>
+            Performs extension-specific validation functions once authentication response has been received.
+            </summary>
+            <returns>Returns boolean value, true if validation is successful, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.PopulateUserObject(ExtremeSwank.OpenId.OpenIdUser)">
+            <summary>
+            Gets the user object data needed to populate an <see cref="T:ExtremeSwank.OpenId.OpenIdUser"/> object.
+            </summary>
+            <remarks>
+            Populates the OpenIdUser.ExtensionData property.
+            </remarks>
+            <param name="userObject">The OpenIdUser object to populate.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.AddOptionalFields(System.String[])">
+            <summary>
+            Add optional fields using members of the <see cref="T:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields"/> class.
+            </summary>
+            <example>
+            <code>
+            OpenIdClient openid;
+            SimpleRegistration sr = new SimpleRegistration(openid);
+            sr.AddOptionalFields(Fields.Nickname, Fields.Email, Fields.PostalCode);
+            </code>
+            </example>
+            <param name="fields">A list of parameters from the Fields class.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.AddRequiredFields(System.String[])">
+            <summary>
+            Add required fields using members of the <see cref="T:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields"/> class.
+            </summary>
+            <example>
+            <code>
+            OpenIdClient openid;
+            SimpleRegistration sr = new SimpleRegistration(openid);
+            sr.AddRequiredFields(Fields.Nickname, Fields.Email, Fields.PostalCode);
+            </code>
+            </example>
+            <param name="fields">A list of parameters from the Fields class.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.#ctor(ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Creates a new instance of <see cref="T:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration"/>.
+            </summary>
+            <param name="state"><see cref="T:ExtremeSwank.OpenId.StateContainer"/> object to attach.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.#ctor(ExtremeSwank.OpenId.ClientCore)">
+            <summary>
+            Creates a new SimpleRegistration plugin and registers it with an <see cref="T:ExtremeSwank.OpenId.ClientCore"/> object.
+            </summary>
+            <param name="client">The <see cref="T:ExtremeSwank.OpenId.ClientCore"/> object to attach.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.ToString">
+            <summary>
+            Get the human-readable name of this plug-in.
+            </summary>
+            <returns>A string containing the plug-in name.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.Name">
+            <summary>
+            Gets the name of the extension.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.NamespaceUri">
+            <summary>
+            Gets the extension's registered namespace.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.Parent">
+            <summary>
+            Gets or sets the parent <see cref="T:ExtremeSwank.OpenId.StateContainer"/> object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.OptionalFields">
+            <summary>
+            Comma-delimited list of optional fields to retrieve from Identity Provider.
+            Valid values are: nickname, email, fullname, dob, gender, postcode,
+            country, language, timezone
+            </summary>
+            <example>
+            <code>
+            OpenIdClient openid;
+            SimpleRegistration sr = new SimpleRegistration(openid);
+            sr.OptionalFields = "nickname,fullname,postcode";
+            </code>
+            </example>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.RequiredFields">
+            <summary>
+            Comma-delimited list of required fields to retrieve from Identity Provider.
+            Valid values are: nickname, email, fullname, dob, gender, postcode,
+            country, language, timezone
+            </summary>
+            <example>
+            <code>
+            OpenIdClient openid;
+            SimpleRegistration sr = new SimpleRegistration(openid);
+            sr.RequiredFields = "nickname,fullname,postcode";
+            </code>
+            </example>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistration.PolicyUrl">
+            <summary>
+            Gets or sets the full URL to the privacy policy that will be sent to the
+            OpenID Provider in the request.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange">
+            <summary>
+            Extension plugin that provides support for the OpenID Attribute Exchange extension.
+            </summary>
+            <remarks>
+            Not all OpenID Providers support all OpenID extensions.  If the expected data is
+            not returned after a successful request, the OpenID Provider may not support this
+            extension.
+            </remarks>
+            <example>
+            Before using <see cref="M:ExtremeSwank.OpenId.ClientCore.CreateRequest(System.Boolean,System.Boolean)"/>, create and configure
+            this plug-in:
+            <code>
+            OpenIdClient client = new OpenIdClient();
+            AttributeExchange ax = new AttributeExchange(client);
+            
+            // Add required items
+            ax.AddFetchItem(AttributeExchangeSchema.Email, 1, true);
+            
+            // Add optional items
+            ax.AddFetchItem(AttributeExchangeSchema.FullName, 1, false);
+            ax.AddFetchItem(AttributeExchangeSchema.UserName, 1, false);
+            
+            client.CreateRequest();
+            </code>
+            When receiving the response from the OpenID Provider:
+            <code>
+            OpenIdUser user = client.RetrieveUser();
+            string userName = user.GetValue(AttributeExchangeSchema.UserName);
+            string fullName = user.GetValue(AttributeExchangeSchema.FullName);
+            string email = user.GetValue(AttributeExchangeSchema.Email);
+            </code>
+            </example>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.#ctor(ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Creates a new instance of <see cref="T:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange"/>.
+            </summary>
+            <param name="state">Parent <see cref="T:ExtremeSwank.OpenId.StateContainer"/> object to attach.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.#ctor(ExtremeSwank.OpenId.ClientCore)">
+            <summary>
+            Creates a new instance of <see cref="T:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange"/>.
+            </summary>
+            <param name="client">Parent <see cref="T:ExtremeSwank.OpenId.ClientCore"/> object to attach.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.AddFetchItem(System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Add an item to a Fetch request.
+            </summary>
+            <param name="idUri">The namespace URI for this item.</param>
+            <param name="alias">A short alias to use for this item.  Use the same alias to retrieve data from the OpenIdUser object.</param>
+            <param name="count">The number of values to return, if more than one value is recorded at the OpenID Provider.</param>
+            <param name="required">Whether or not a response for this item is required.</param>
+            <exception cref="T:System.InvalidOperationException">Attempted to add fetch item when it Store mode.</exception>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.AddFetchItem(System.Uri,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Add an item to a Fetch request.
+            </summary>
+            <param name="idUri">The namespace URI for this item.</param>
+            <param name="alias">A short alias to use for this item.  Use the same alias to retrieve data from the OpenIdUser object.</param>
+            <param name="count">The number of values to return, if more than one value is recorded at the OpenID Provider.</param>
+            <param name="required">Whether or not a response for this item is required.</param>
+            <exception cref="T:System.InvalidOperationException">Attempted to add fetch item when it Store mode.</exception>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.AddFetchItem(ExtremeSwank.OpenId.SchemaDef,System.Int32,System.Boolean)">
+            <summary>
+            Add an item to a Fetch request.
+            </summary>
+            <param name="schemaDef">The schema definition for this item.</param>
+            <param name="count">The number of values to return, if more than one value is recorded at the OpenID Provider.</param>
+            <param name="required">Whether or not a response for this item is required.</param>
+            <exception cref="T:System.InvalidOperationException">Attempted to add fetch item when it Store mode.</exception>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.AddStoreItem(System.String,System.String,System.String[])">
+            <summary>
+            Add an item to a Store request.
+            </summary>
+            <param name="idUri">The namespace URI for this item.</param>
+            <param name="alias">A short alias for this item.</param>
+            <param name="values">One or more values to record in this item.</param>
+            <exception cref="T:System.InvalidOperationException">Attempted to add store item in Fetch mode.</exception>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.AddStoreItem(System.Uri,System.String,System.String[])">
+            <summary>
+            Add an item to a Store request.
+            </summary>
+            <param name="idUri">The namespace URI for this item.</param>
+            <param name="alias">A short alias for this item.</param>
+            <param name="values">One or more values to record in this item.</param>
+            <exception cref="T:System.InvalidOperationException">Attempted to add store item in Fetch mode.</exception>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.AddStoreItem(ExtremeSwank.OpenId.SchemaDef,System.String[])">
+            <summary>
+            Add an item to a Store request.
+            </summary>
+            <param name="schemaDef">SchemaDef representing the value(s) to store.</param>
+            <param name="values">One or more values to record in this item.</param>
+            <exception cref="T:System.InvalidOperationException">Attempted to add store item in Fetch mode.</exception>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.BuildAuthorizationData(ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult)">
+            <summary>
+            Gets the key-value data to be sent to Identity Provider during
+            authentication request.
+            </summary>
+            <param name="discResult">DiscoveryResult object to use.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.Validation">
+            <summary>
+            Whether or not the validation completed per this extension.
+            </summary>
+            <returns>Always returns true.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.PopulateUserObject(ExtremeSwank.OpenId.OpenIdUser)">
+            <summary>
+            Gets data for use by OpenIdUser object.
+            </summary>
+            <param name="userObject">The OpenIdUser object to populate.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.DecodeUserData(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Decode data returned from a fetch request
+            </summary>
+            <param name="arguments">Request data that holds the data to decode.</param>
+            <returns>An array of AttributeExchangeItem objects.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.DecodeUserData">
+            <summary>
+            Decode data returned from a fetch request
+            </summary>
+            <returns>An array of AttributeExchangeItem objects</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.ToString">
+            <summary>
+            Get the human-readable name of this plug-in.
+            </summary>
+            <returns>A string containing the plug-in name.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.UpdateUrl">
+            <summary>
+            The Update URL that the OpenID Provider will send updates to whenever the requested
+            data is updated.
+            </summary>
+            <remarks><para>This is a feature that is supported by some OpenID Providers. Any time the
+            data in this request is updated at the OpenID Provider, an update will be pushed to
+            the URL supplied here.  If the OpenID Provider does not support this function, the 
+            request is simply ignored.</para>
+            <para>If you wish to receive these updates, use <see cref="T:ExtremeSwank.OpenId.AXReceiver"/>.</para>
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.Mode">
+            <summary>
+            Gets or sets the mode that will be used for this request.  Either a fetch or a store request.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.Name">
+            <summary>
+            Gets the human-readable name of this extension.
+            </summary>
+            <remarks>Always returns "OpenID Attribute Exchange 1.0".</remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.Parent">
+            <summary>
+            Gets the parent <see cref="T:ExtremeSwank.OpenId.StateContainer"/> object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.AttributeExchange.NamespaceUri">
+            <summary>
+            Gets the namespace URI for this extension.
+            </summary>
+            <remarks>See <see cref="T:ExtremeSwank.OpenId.ProtocolUri"/> for more information.</remarks>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds">
+            <summary>
+            XRDS Discovery Plugin.  Provides everything needed to
+            discover OpenIDs using XRDS documents.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds.ProcessId(System.String)">
+            <summary>
+            Accepts a claimed identifier and returns
+            the normalized identifier, and an end-point URL.
+            </summary>
+            <param name="openid">String containing claimed identifier.</param>
+            <returns>A populated NormalizationEntry object, or null if the identitifer cannot
+            be processed by this plug-in.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds.Discover(System.String)">
+            <summary>
+            Parse HTTP response for OpenID Identity Providers.
+            </summary>
+            <param name="content">HTTP response content to parse.</param>
+            <returns>An array of DiscoveryResult objects.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds.#ctor(ExtremeSwank.OpenId.StateContainer)">
+            <summary>
+            Creates a new instance of Xrds.
+            </summary>
+            <param name="state">Parent StateContainer object</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds.#ctor(ExtremeSwank.OpenId.ClientCore)">
+            <summary>
+            Creates a new instance of Xrds.
+            </summary>
+            <param name="client">Parent <see cref="T:ExtremeSwank.OpenId.ClientCore"/> object</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds.ToString">
+            <summary>
+            Get the human-readable name of this plug-in.
+            </summary>
+            <returns>A string containing the plug-in name.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds.Name">
+            <summary>
+            Gets the name of this discovery plugin.
+            </summary>
+            <remarks>Always returns "XRDS Discovery Plugin".</remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds.Parent">
+            <summary>
+            Gets or sets the parent StateContainer object.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Discovery.Xrds.Version">
+            <summary>
+            Gets the newest OpenID protocol version supported
+            by the Identity Provider.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Persistence.OdbcAssociationManager">
+            <summary>
+            Manages associations with OpenID Providers, uses ODBC for persistence.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.OdbcAssociationManager.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new OdbcAssociationManager instance.
+            </summary>
+            <param name="connectionString">ODBC connection string.</param>
+            <param name="tableNamePrefix">Table name prefix.</param>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.OpenIdUser">
+            <summary>
+            Contains all information received about the authenticated user.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdUser.GetValue(System.String)">
+            <summary>
+            Retrieves extension data.
+            </summary>
+            <param name="key">Key of value to get</param>
+            <returns>String containing value, or null if the value is not present</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdUser.GetValue(System.Object)">
+            <summary>
+            Retrieves extension data
+            </summary>
+            <param name="key">Object, that when <see cref="M:System.Object.ToString"/> is run against it, produces the key of the value to get</param>
+            <returns>String containing requested value, or null if the value is not present</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdUser.#ctor(ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult)">
+            <summary>
+            Returns a new <see cref="T:ExtremeSwank.OpenId.OpenIdUser"/> object with a pre-set claimed identity.
+            </summary>
+            <param name="discResult">The DiscoveryResult object created from the previous discovery process.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.OpenIdUser.Retrieve(ExtremeSwank.OpenId.ClientCore)">
+            <summary>
+            Fill the object with information from received response arguments.
+            </summary>
+            <param name="client"><see cref="T:ExtremeSwank.OpenId.ClientCore"/> object from which to retrieve the data.</param>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.OpenIdUser.LastDiscoveryResult">
+            <summary>
+            Get the DiscoveryResult object generated during the last
+            OpenID discovery.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.OpenIdUser.Identity">
+            <summary>
+            Gets or sets the claimed identifier.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.OpenIdUser.BaseIdentity">
+            <summary>
+            Gets or sets the identifier validated by the Identity Provider.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.OpenIdUser.ExtensionData">
+            <summary>
+            Data returned by all loaded Extensions.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.KeyEncryption">
+            <summary>
+            Represents the encryption type used during key exchange.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.KeyEncryption.None">
+            <summary>
+            No encryption used during key exchange operation.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.KeyEncryption.DHSHA1">
+            <summary>
+            Diffie-Hellman key exchange will be used, and data will be
+            signed using SHA1.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.KeyEncryption.DHSHA256">
+            <summary>
+            Diffie-Hellman key exchange will be used, and data will be
+            signed using SHA256.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.AuthenticationMode">
+            <summary>
+            Represents the mode used for authentication.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.AuthenticationMode.Stateful">
+            <summary>
+            Represents Stateful (smart) authentication.
+            </summary>
+            <remarks>
+            <para>
+            In Stateful authentication, the client will first create a 
+            cached shared secret with the Identity Provider. An authentication
+            request will then be passed to the Identity Provider through the user's web browser.
+            Once the user has been authenticated at the Identity Provider, the response
+            is sent back to the client through the web browser. The client will then verify the
+            validity of the response using the cached shared secret.
+            </para>
+            <para>
+            Stateful mode requires less processing at the Identity Provider
+            and gives faster response to the user.
+            </para>
+            </remarks>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.AuthenticationMode.Stateless">
+            <summary>
+            Represents Stateless (dumb) authentication.
+            </summary>
+            <remarks>In Stateless authentication, the authentication request is
+            sent immediately to the Identity Provider through the user's web browser.
+            The Identity Provider will authenticate the user and will eventually
+            respond with the requested information, also passing the data through the 
+            web browser. The Consumer will then communicate with the Identity Provider 
+            directly to confirm the validity of the data.</remarks>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Persistence.Association">
+            <summary>
+            Contains information for a specific Association between the Client
+            and an OpenID Provider.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.Association.ProtocolVersion">
+            <summary>
+            Gets or sets the version of the OpenID Protocol used to create
+            the association.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.Association.Server">
+            <summary>
+            Gets or sets the OpenID Provider URL.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.Association.Handle">
+            <summary>
+            Gets or sets the association handle.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.Association.AssociationType">
+            <summary>
+            Gets or sets the association type.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.Association.SessionType">
+            <summary>
+            Gets or sets the session type.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.Association.Secret">
+            <summary>
+            Gets or sets the negotiated secret.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.Association.Expiration">
+            <summary>
+            Gets or sets the time when this association will be expired.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Persistence.SingularSessionManager">
+            <summary>
+            A volatile in-memory SessionManager.
+            </summary>
+            <remarks>
+            Only holds data for a single user session.  Data is not persisted.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.Persistence.SingularSessionManager.Nonce">
+            <summary>
+            Gets or sets the nonce value used to protect against replay attacks.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.Persistence.SingularAssociationManager">
+            <summary>
+            Manages associations with OpenID Providers in a volatile, in-memory
+            structure.  Data is not persisted.
+            </summary>
+            <remarks>
+            Useful for non-ASP.NET applications that will stay executing throughout
+            the OpenID authentication lifecycle, and that require Stateful authentication.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.SingularAssociationManager.#ctor">
+            <summary>
+            Create a new instance of <see cref="T:ExtremeSwank.OpenId.Persistence.SingularAssociationManager"/>.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.SingularAssociationManager.Init">
+            <summary>
+            Initializes the in-memory associations table.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.SingularAssociationManager.Remove(ExtremeSwank.OpenId.Persistence.Association)">
+            <summary>
+            Removes an association from the associations table.
+            </summary>
+            <param name="assoc">Association to remove from persistence.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.SingularAssociationManager.Add(ExtremeSwank.OpenId.Persistence.Association)">
+            <summary>
+            Adds a new association to the associations table.
+            </summary>
+            <param name="association">The association entry to store.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.SingularAssociationManager.ToAssociation(System.Data.DataRow)">
+            <summary>
+            Translates a DataRow matching the correct schema
+            into an Association object.
+            </summary>
+            <param name="dr">DataRow containing source data.</param>
+            <returns>Populated Association object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.SingularAssociationManager.FindByHandle(System.String)">
+            <summary>
+            Find an association by its handle.
+            </summary>
+            <param name="handle">The association handle.</param>
+            <returns>A DataRow containing the association entry.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.SingularAssociationManager.FindByServer(System.String)">
+            <summary>
+            Find an association by server name.
+            </summary>
+            <param name="server">The OpenID server endpoint URL</param>
+            <returns>An Association object containing the association data</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.Persistence.SingularAssociationManager.Cleanup">
+            <summary>
+            Removes expired associations from the associations table
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields">
+            <summary>
+            OpenIdUser data fields that are made available with the SimpleRegistration extension.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields.Nickname">
+            <summary>
+            Any UTF-8 string that the End User wants to use as a nickname.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields.Email">
+            <summary>
+            The email address of the End User as specified in section 3.4.1 of [RFC2822] (Resnick, P., “Internet Message Format,” .).
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields.FullName">
+            <summary>
+            UTF-8 string free text representation of the End User's full name.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields.DateOfBirth">
+            <summary>
+            The End User's date of birth as YYYY-MM-DD. Any values whose representation uses fewer than the specified number of digits should be zero-padded. The length of this value MUST always be 10. If the End User user does not want to reveal any particular component of this value, it MUST be set to zero.
+            For instance, if a End User wants to specify that his date of birth is in 1980, but not the month or day, the value returned SHALL be "1980-00-00".
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields.Gender">
+            <summary>
+            The End User's gender, "M" for male, "F" for female.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields.PostalCode">
+            <summary>
+            UTF-8 string free text that SHOULD conform to the End User's country's postal system.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields.Country">
+            <summary>
+            The End User's country of residence as specified by ISO3166.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields.Language">
+            <summary>
+            End User's preferred language as specified by ISO639.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OpenId.PlugIns.Extensions.SimpleRegistrationFields.TimeZone">
+            <summary>
+            ASCII string from TimeZone database
+            For example, "Europe/Paris" or "America/Los_Angeles".
+            </summary>
+        </member>
+    </members>
+</doc>

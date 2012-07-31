@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api:container xmlns:api="http://www.dossia.org/v2.0/api" xmlns:phr="http://www.dossia.org/v2.0/xml/phr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dossia.org/v2.0/api http://www.dossia.org/v2.0/api/container.xsd">
+    <api:document>
+        <api:payload>
+            <phr:BinaryData ProfessionallySourced="true">
+                <phr:Origin Classification="PHR">
+                    <phr:Organization ProviderType="Other">
+                        <phr:OrganizationName>Dossia</phr:OrganizationName>
+                        <phr:Address>
+                            <phr:StreetAddress1>One Cambridge Center</phr:StreetAddress1>
+                            <phr:StreetAddress2>Suite 11</phr:StreetAddress2>
+                            <phr:County>Cambridge</phr:County>
+                            <phr:City>Boston</phr:City>
+                            <phr:State>CA</phr:State>
+                            <phr:PostalCode>5231-02142</phr:PostalCode>
+                            <phr:Country>USA</phr:Country>
+                        </phr:Address>
+                        <phr:Contact type="Work Phone">900-868-8566</phr:Contact>
+                        <phr:ProviderIdentifier Type="PHA">
+                            <phr:Identifier>1999-12</phr:Identifier>
+                            <phr:Description>Dossia provides PHR services.</phr:Description>
+                        </phr:ProviderIdentifier>
+                    </phr:Organization>
+                </phr:Origin>
+                <phr:Date Type="Actual">
+                    <phr:StartDate>2009-01-21</phr:StartDate>
+                </phr:Date>
+                <phr:Filename>minus.gif</phr:Filename>
+                <phr:MimeType>image/gif</phr:MimeType>
+                <phr:Length>181</phr:Length>
+            </phr:BinaryData>
+        </api:payload>
+    </api:document>
+</api:container>

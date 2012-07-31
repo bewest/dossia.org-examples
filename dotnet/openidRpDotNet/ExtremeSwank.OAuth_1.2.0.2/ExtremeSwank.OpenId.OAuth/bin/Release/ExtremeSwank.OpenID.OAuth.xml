@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExtremeSwank.OpenId.OAuth</name>
+    </assembly>
+    <members>
+        <member name="T:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension">
+            <summary>
+            OpenID+OAuth Extension 1.0
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.#ctor(ExtremeSwank.OpenId.StateContainer,ExtremeSwank.OAuth.OAuthClient)">
+            <summary>
+            Create a new instance of OAuthExtension.
+            </summary>
+            <param name="state">OpenIdClient's StateContainer object.</param>
+            <param name="oauthClient">The OAuth Consumer to use.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.#ctor(ExtremeSwank.OpenId.ClientCore,ExtremeSwank.OAuth.OAuthClient)">
+            <summary>
+            Create a new instance of OAuthExtension.
+            </summary>
+            <param name="core">The OpenIdClient to use.</param>
+            <param name="oauthClient">The OAuth Consumer to use.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.BuildAuthorizationData(ExtremeSwank.OpenId.PlugIns.Discovery.DiscoveryResult)">
+            <summary>
+            Build the authentication arguments that will be sent with the OpenID
+            request.
+            </summary>
+            <param name="discResult">Discovery result data.</param>
+            <returns>A populated dictionary containing the request arguments.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.Validation">
+            <summary>
+            Perform response validation. Always returns true.
+            </summary>
+            <returns>True.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.PopulateUserObject(ExtremeSwank.OpenId.OpenIdUser)">
+            <summary>
+            Populate the OpenIDUser object.  This method does nothing.
+            </summary>
+            <param name="userObject">The OpenIdUser object to populate.</param>
+        </member>
+        <member name="M:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.GetAccessToken">
+            <summary>
+            Get the OAuth Access Token from the current OpenID response.
+            </summary>
+            <returns>A populated AccessToken.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.Scope">
+            <summary>
+            Set the scope of the extension, per the OAuth specification.
+            </summary>
+            <remarks>
+            This value is specific to the service provider.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.OAuthClient">
+            <summary>
+            The OAuth Consumer to use.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.Name">
+            <summary>
+            The human-readable name of the OpenID extension.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.Parent">
+            <summary>
+            The Parent StateContainer object linked to the OpenID Consumer.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OpenId.PlugIns.Extensions.OAuthExtension.NamespaceUri">
+            <summary>
+            The namespace of this OpenID extension.
+            </summary>
+        </member>
+    </members>
+</doc>

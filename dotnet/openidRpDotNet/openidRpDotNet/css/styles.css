@@ -1,0 +1,47 @@
+﻿.error
+{
+    color : Red;
+}
+
+.displayBlock
+{
+    margin : 1em;
+    padding : 0.25em 0.5em 0em 0.5em;
+    border:solid 1px black;
+    width : 800px;
+}
+
+.highlightBlock
+{
+    background-color : #AADDAA;
+    margin : 1em;
+    padding : 0.25em 0.5em 0em 0.5em;
+    border:solid 1px grey;
+    width : 750px;
+}
+
+.blockHeader
+{
+    margin-top : 0px;
+    margin-bottom : 0px;
+    font-size : 120%;
+    font-weight : bold;
+}
+
+.blockHeader
+{
+    margin-top : 0px;
+    margin-bottom : 0px;
+    font-size : 120%;
+    font-weight : bold;
+}
+
+.dispLabel, .blockHeader
+{
+    color :#44AA44;
+}
+
+.dispLabel
+{
+    font-weight : bolder;
+}

@@ -1,0 +1,28 @@
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_4.0.x\bin\Debug\ExtremeSwank.OpenId.dll.config
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_4.0.x\bin\Debug\ExtremeSwank.OpenId.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_4.0.x\bin\Debug\ExtremeSwank.OpenId.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_4.0.x\bin\Debug\ExtremeSwank.OpenID.xml
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_4.0.x\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_4.0.x\obj\Debug\ExtremeSwank.OpenId.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_4.0.x\obj\Debug\ExtremeSwank.OpenId.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_Trunk\bin\Debug\ExtremeSwank.OpenId.dll.config
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_Trunk\bin\Debug\ExtremeSwank.OpenId.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_Trunk\bin\Debug\ExtremeSwank.OpenId.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_Trunk\bin\Debug\ExtremeSwank.OpenID.xml
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_Trunk\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_Trunk\obj\Debug\ExtremeSwank.OpenId.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\OpenIDConsumer_Trunk\obj\Debug\ExtremeSwank.OpenId.pdb
+C:\dev\openidrp-test\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\bin\Debug\ExtremeSwank.OpenId.dll.config
+C:\dev\openidrp-test\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\bin\Debug\ExtremeSwank.OpenId.dll
+C:\dev\openidrp-test\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\bin\Debug\ExtremeSwank.OpenId.pdb
+C:\dev\openidrp-test\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\bin\Debug\ExtremeSwank.OpenID.xml
+C:\dev\openidrp-test\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\openidrp-test\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\obj\Debug\ExtremeSwank.OpenId.dll
+C:\dev\openidrp-test\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\obj\Debug\ExtremeSwank.OpenId.pdb
+C:\dev\openidRpDotNet\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\bin\Debug\ExtremeSwank.OpenId.dll.config
+C:\dev\openidRpDotNet\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\bin\Debug\ExtremeSwank.OpenId.dll
+C:\dev\openidRpDotNet\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\bin\Debug\ExtremeSwank.OpenId.pdb
+C:\dev\openidRpDotNet\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\bin\Debug\ExtremeSwank.OpenID.xml
+C:\dev\openidRpDotNet\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\openidRpDotNet\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\obj\Debug\ExtremeSwank.OpenId.dll
+C:\dev\openidRpDotNet\ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\obj\Debug\ExtremeSwank.OpenId.pdb

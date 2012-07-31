@@ -1,0 +1,7 @@
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\obj\Release\ResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\bin\Release\ExtremeSwank.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\bin\Release\ExtremeSwank.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\obj\Release\ExtremeSwank.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\obj\Release\ExtremeSwank.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\bin\Release\ExtremeSwank.OAuth.xml
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OAuth\bin\Release\ExtremeSwank.OAuth.dll.config

@@ -1,0 +1,36 @@
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Debug\ExtremeSwank.OpenID.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Debug\ExtremeSwank.OpenID.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Debug\ExtremeSwank.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Debug\ExtremeSwank.OpenId.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Debug\ExtremeSwank.OpenId.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Debug\ExtremeSwank.OpenId.xml
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Debug\ExtremeSwank.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\obj\Debug\ExtremeSwank.OpenID.OAuth.dll
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\obj\Debug\ExtremeSwank.OpenID.OAuth.pdb
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Debug\ExtremeSwank.OpenID.OAuth.xml
+C:\Users\John\Documents\Visual Studio 2008\Projects\ExtremeSwank.OpenID.OAuth\bin\Debug\ExtremeSwank.OAuth.xml
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\obj\Debug\ExtremeSwank.OpenId.OAuth.dll
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\obj\Debug\ExtremeSwank.OpenId.OAuth.pdb
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.OAuth.dll
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.OAuth.pdb
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenID.OAuth.xml
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OAuth.dll
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.dll
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.pdb
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.xml
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OAuth.pdb
+C:\dev\openidrp-test\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OAuth.xml
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.OAuth.dll
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.OAuth.pdb
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenID.OAuth.xml
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OAuth.dll
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.dll
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.pdb
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OpenId.xml
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OAuth.pdb
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\bin\Debug\ExtremeSwank.OAuth.xml
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\obj\Debug\ExtremeSwank.OpenId.OAuth.dll
+C:\dev\openidRpDotNet\ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\obj\Debug\ExtremeSwank.OpenId.OAuth.pdb

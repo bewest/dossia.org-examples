@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtremeSwank.OpenID", "ExtremeSwank.OpenId_4.0.1.1\ExtremeSwank.OpenId\ExtremeSwank.OpenID.csproj", "{8CB75F6C-2312-4E23-8701-1BD642A4E31C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "openidRpDotNet", "openidRpDotNet\openidRpDotNet.csproj", "{7BD1103A-9226-4042-9489-59591B2C8B0B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{60CA9A3D-C7D9-441B-8589-21F2BFA8C9FA} = {60CA9A3D-C7D9-441B-8589-21F2BFA8C9FA}
+		{11B21367-976E-4214-AA6E-B574C458E83D} = {11B21367-976E-4214-AA6E-B574C458E83D}
+		{8CB75F6C-2312-4E23-8701-1BD642A4E31C} = {8CB75F6C-2312-4E23-8701-1BD642A4E31C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtremeSwank.OAuth", "ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OAuth\ExtremeSwank.OAuth.csproj", "{11B21367-976E-4214-AA6E-B574C458E83D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8CB75F6C-2312-4E23-8701-1BD642A4E31C} = {8CB75F6C-2312-4E23-8701-1BD642A4E31C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtremeSwank.OpenId.OAuth", "ExtremeSwank.OAuth_1.2.0.2\ExtremeSwank.OpenId.OAuth\ExtremeSwank.OpenId.OAuth.csproj", "{60CA9A3D-C7D9-441B-8589-21F2BFA8C9FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CB75F6C-2312-4E23-8701-1BD642A4E31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB75F6C-2312-4E23-8701-1BD642A4E31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB75F6C-2312-4E23-8701-1BD642A4E31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB75F6C-2312-4E23-8701-1BD642A4E31C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD1103A-9226-4042-9489-59591B2C8B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD1103A-9226-4042-9489-59591B2C8B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD1103A-9226-4042-9489-59591B2C8B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD1103A-9226-4042-9489-59591B2C8B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B21367-976E-4214-AA6E-B574C458E83D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B21367-976E-4214-AA6E-B574C458E83D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B21367-976E-4214-AA6E-B574C458E83D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B21367-976E-4214-AA6E-B574C458E83D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CA9A3D-C7D9-441B-8589-21F2BFA8C9FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CA9A3D-C7D9-441B-8589-21F2BFA8C9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CA9A3D-C7D9-441B-8589-21F2BFA8C9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CA9A3D-C7D9-441B-8589-21F2BFA8C9FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

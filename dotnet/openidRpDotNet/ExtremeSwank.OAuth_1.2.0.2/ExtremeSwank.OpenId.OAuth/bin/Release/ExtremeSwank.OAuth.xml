@@ -1,0 +1,1630 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExtremeSwank.OAuth</name>
+    </assembly>
+    <members>
+        <member name="T:ExtremeSwank.OAuth.OAuthCredentials">
+            <summary>
+            OAuth-specific credential data to be used during client HTTP requests.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthCredentials.#ctor">
+            <summary>
+            Create a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthCredentials.GetCredential(System.Uri,System.String)">
+            <summary>
+            Gets a NetworkCredential object for username/password authentication.
+            Always returns null.
+            </summary>
+            <param name="uri">Destination URL.</param>
+            <param name="authType">Authentication type.</param>
+            <returns>Always returns null.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthCredentials.Consumer">
+            <summary>
+            OAuth Consumer to use to facilitate the authentication.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthCredentials.Arguments">
+            <summary>
+            Additional arguments to include in the request.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthCredentials.RsaCertificate">
+            <summary>
+            The X509 certificate containing the private key to use for RSA-SHA1 signing.
+            Not necessary for other signing methods.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthCredentialsStandard">
+            <summary>
+            Standard OAuth credentials for HTTP requests.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthCredentialsStandard.#ctor">
+            <summary>
+            Create a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthCredentialsStandard.Token">
+            <summary>
+            The Access Token to use to access the protected resource.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthCredentialsTwoLegged">
+            <summary>
+            Two-Legged OAuth credentials for HTTP requests.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthCredentialsTwoLegged.#ctor">
+            <summary>
+            Create a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthCredentialsTwoLegged.RequestorId">
+            <summary>
+            The ID of the user account at the service provider.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.AuthenticationMethod">
+            <summary>
+            HTTP method to use for OAuth request, also
+            specifies the format for the authentication parameters.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.AuthenticationMethod.Header">
+            <summary>
+            Authenticate using the HTTP header.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.AuthenticationMethod.Post">
+            <summary>
+            Authenticate using the HTTP POST method.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.AuthenticationMethod.Get">
+            <summary>
+            Authenticate using the HTTP GET method.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthToken">
+            <summary>
+            Abstract OAuth Token object.
+            </summary>
+            <remarks>
+            OAuth uses Tokens for authentication.  Request Tokens
+            are temporary tokens which must be approved by the 
+            end user.  Approved Request Tokens can be exchanged for
+            Access Tokens, which are permanent, and can be used for
+            subsequent authentication requests.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthToken.#ctor">
+            <summary>
+            Create a new instance of OAuthToken.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthToken.#ctor(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Creates a new instance of OAuthToken.
+            </summary>
+            <remarks>
+            The raw arguments received in the response from the
+            service provider.
+            </remarks>
+            <param name="args">Arguments used to populate the token's properties.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthToken.Restore``1(System.String)">
+            <summary>
+            Re-build a object deriving from OAuthToken using
+            serialized data from the object's Export method.
+            </summary>
+            <typeparam name="T">
+            Type to restore. Must derive from OAuthToken, 
+            and type must match the object data.
+            </typeparam>
+            <param name="objectData">The serialized object data.</param>
+            <returns>The specifed token object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthToken.Export">
+            <summary>
+            Serialize the object to a string that can be used
+            to restore the object at a later time.
+            </summary>
+            <returns>The serialized object data.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthToken.Key">
+            <summary>
+            The key of the token, as provided by the service
+            provider.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthToken.Secret">
+            <summary>
+            The token's secret, as provided by the service
+            provider.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthToken.Parameters">
+            <summary>
+            Additional parameters received from the service provider.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.RequestToken">
+            <summary>
+            Request Tokens are temporary tokens used to generate
+            Access Tokens.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.RequestToken.#ctor">
+            <summary>
+            Create a new instance of RequestToken.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.RequestToken.#ctor(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Creates a new instance of RequestToken.
+            </summary>
+            <param name="args">Token arguments.</param>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.AccessToken">
+            <summary>
+            Access Tokens are permanent tokens which can be used
+            for OAuth authentication requests.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.AccessToken.#ctor">
+            <summary>
+            Creates a new instance of AccessToken.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.AccessToken.#ctor(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Creates a new instance of AccessToken.
+            </summary>
+            <param name="args">Token arguments.</param>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.ServerRequestToken">
+            <summary>
+            Server-side representation of an OAuth Request Token.
+            </summary>
+            <remarks>
+            Holds additional server-side arguments that are needed to
+            handle authentication requests.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ServerRequestToken.#ctor(System.String,System.String,System.String,System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Create a new instance of ServerRequestToken.
+            </summary>
+            <param name="consumerKey">Consumer key to associate with this token.</param>
+            <param name="tokenKey">Key for this token.</param>
+            <param name="tokenSecret">Secret for this token.</param>
+            <param name="accessTokenKey">The key of the associated Access Token.</param>
+            <param name="parameters">Optional parameters to add to the token.</param>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.ServerRequestToken.ConsumerKey">
+            <summary>
+            The Consumer Key associated with this token.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.ServerRequestToken.AccessTokenKey">
+            <summary>
+            The Token Key of the associated Access Token, if there is one.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.ServerAccessToken">
+            <summary>
+            Server-side representation of an OAuth Access Token.
+            </summary>
+            <remarks>
+            Holds additional server-side arguments that are needed to
+            handle authentication requests.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ServerAccessToken.#ctor(System.String,System.String,System.String,System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Create a new instance of ServerAccessToken.
+            </summary>
+            <param name="consumerKey">The key of the associated consumer.</param>
+            <param name="tokenKey">This token's key.</param>
+            <param name="tokenSecret">This token's secret.</param>
+            <param name="userAccount">The associated user account.</param>
+            <param name="parameters">Optional parameters.</param>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.ServerAccessToken.ConsumerKey">
+            <summary>
+            Key of the Consumer associated with this token.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.ServerAccessToken.UserAccount">
+            <summary>
+            User account associated with this token.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthClient">
+            <summary>
+            OAuth 1.0 Consumer
+            </summary>
+            <remarks>
+            Implements OAuth 1.0 Core, with support for two-legged OAuth.
+            </remarks>
+            <example>
+            <para>
+            First, initialize the OAuth Consumer.
+            </para>
+            <code>
+            OAuthClient client = new OAuthClient()
+            {
+                ConsumerKey = "key_from_provider",
+                ConsumerSecret = "secret_from_provider",
+                RequestTokenUrl = new Uri("http://requestTokenUrl/from/provider"),
+                AuthorizeTokenUrl = new Uri("http://authorizeurl/from/provider"),
+                AccessTokenUrl = new Uri("http://accessTokenUrl/from/provider")
+            };
+            </code>
+            <para>
+            Then, get a Request Token from the service provider.
+            </para>
+            <code>
+            // Get a Request Token
+            RequestToken requestToken = client.GetRequestToken(null);
+            
+            // Get user approval for the Token, directing the service provider
+            // to send the user to the CallbackUri when finished
+            Response.Redirect(client.GetRedirect(new Uri("http://this/url"), requestToken, null));
+            </code>
+            <para>
+            Once the user has approved the request for a token, you can then request the permanent
+            Access Token.
+            </para>
+            <code>
+            AccessToken accessToken = client.GetAccessToken(requestToken);
+            </code>
+            <para>
+            Once the Access Token is received, save it, associated with that user.  Any time you
+            want to get that user's information from the service provider, just do a normal WebRequest
+            with the OAuth credentials.
+            </para>
+            <code>
+            WebRequest request = WebRequest.Create(new Uri("http://api/url"));
+            request.Credentials = client.GetCredentials(accessToken, null);
+            </code>
+            </example>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.#ctor">
+            <summary>
+            Creates a new instance of OAuthClient.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.RegisterAuthenticationModule">
+            <summary>
+            Register the OAuth Authentication Module.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetRequestToken(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Requests a Request Token from the OAuth Service Provider.
+            </summary>
+            <param name="args">Collection of additional arguments that can optionally be included in the request.</param>
+            <returns>A populated RequestToken object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetRedirect(System.Uri,ExtremeSwank.OAuth.RequestToken,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Returns the URL that the user should be directed to in order to
+            upgrade the Request Token to a Access Token.
+            </summary>
+            <param name="callbackUri">Optional URL that the user will be directed to when finished.</param>
+            <param name="token">The Request Token to upgrade.</param>
+            <param name="args">Optional additional arguments to include in the request.</param>
+            <returns>The redirect URL.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetAccessToken(ExtremeSwank.OAuth.RequestToken)">
+            <summary>
+            Requests an Access Token from the OAuth Service Provider.
+            </summary>
+            <remarks>
+            An Access Token can only be created if a Request Token has been received,
+            and that the Request Token has been authorized by the end-user.
+            </remarks>
+            <param name="token">The Request Token to upgrade.</param>
+            <returns>A populated AccessToken.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetAuthParameters(System.Uri,System.String,ExtremeSwank.OAuth.AccessToken,System.Collections.Specialized.NameValueCollection,ExtremeSwank.OAuth.AuthenticationMethod)">
+            <summary>
+            Get a string containing the Authentication parameters that should be
+            passed in the authentication request.  Compatible with standard OAuth
+            authentication.
+            </summary>
+            <remarks>
+            Not for the faint of heart.  For most situations, use GetCredentials(), 
+            and pass the output to the WebRequest.Credentials property.
+            </remarks>
+            <param name="uri">URL for the request.</param>
+            <param name="method">HTTP Request method.</param>
+            <param name="token">AccessToken to use.</param>
+            <param name="postArgs">Arguments that will be included in the POST body that need to be signed.</param>
+            <param name="format">Format of the authentication request data.</param>
+            <returns>String containing the OAuth authentication parameters.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetAuthParameters(System.Uri,System.String,System.String,System.Collections.Specialized.NameValueCollection,ExtremeSwank.OAuth.AuthenticationMethod)">
+            <summary>
+            Get a string containing the Authentication parameters that should be
+            passed in the authentication request. Compatible with Two-Legged OAuth 
+            authentication.
+            </summary>
+            <remarks>
+            Not for the faint of heart.  For most situations, use GetCredentials()
+            and pass the output to the WebRequest.Credentials property.
+            </remarks>
+            <param name="uri">URL for the request.</param>
+            <param name="method">HTTP Request method.</param>
+            <param name="requestorId">User account ID.</param>
+            <param name="postArgs">Argumentst that will be in the POST body that need to be signed.</param>
+            <param name="format">Format of the authentication request data.</param>
+            <returns>String containing the OAuth authentication parameters.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetCredentials(ExtremeSwank.OAuth.AccessToken,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Using an Access Token, get an ICredentials object that can be
+            used with WebRequest.
+            </summary>
+            <param name="token">Valid OAuth Access Token for the remote site.</param>
+            <param name="postArgs">If an HTTP POST request, all arguments that will be included in the POST body.  This ensures a correct OAuth signature is generated.</param>
+            <returns>Populated ICredentials object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetCredentials(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Get an ICredentials object for two-legged OAuth authentication.
+            </summary>
+            <param name="requestorId">Name of the account to access.</param>
+            <param name="postArgs">If an HTTP POST request, all arguments that will be included in the POST body.  This ensures a correct OAuth signature is generated.</param>
+            <returns>Populated ICredentials object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetAuthenticationRedirect(System.Uri,System.Uri,ExtremeSwank.OAuth.RequestToken,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Using a Request Token, generate the URL that the user must
+            visit in order to authorize the token.
+            </summary>
+            <param name="uri">Destination URL.</param>
+            <param name="callbackUri">Optional URL to send the user back to when the token has been verified.</param>
+            <param name="token">The Request Token to verify.</param>
+            <param name="parameters">Optional additinal parameters to include.</param>
+            <returns>A URL to which the user should be directed.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.AuthenticationMethodToString(ExtremeSwank.OAuth.AuthenticationMethod)">
+            <summary>
+            Convert AuthenticationMethods to the appropriate
+            HTTP method for token requests.
+            </summary>
+            <param name="method">Input value.</param>
+            <returns>Appropriate HTTP method.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetRequestToken(System.Uri,System.Collections.Specialized.NameValueCollection,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,ExtremeSwank.OAuth.SignatureMethod,ExtremeSwank.OAuth.AuthenticationMethod)">
+            <summary>
+            Get a new RequestToken from the service provider.
+            </summary>
+            <param name="uri">Request token URL.</param>
+            <param name="args">Arguments to include in the request.</param>
+            <param name="consumerKey">The consumer key.</param>
+            <param name="consumerSecret">The consumer secret.</param>
+            <param name="sigMethod">The signature signing method.</param>
+            <param name="mode">The HTTP connection and argument format to use.</param>
+            <param name="rsaCert">The X509 certificate containing the private key for RSA-SHA1.</param>
+            <returns>A populated Request Token.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetAccessToken(System.Uri,ExtremeSwank.OAuth.RequestToken,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,ExtremeSwank.OAuth.SignatureMethod,ExtremeSwank.OAuth.AuthenticationMethod)">
+            <summary>
+            Upgrade a Request Token to an Access Token.
+            </summary>
+            <param name="uri">Access token URL.</param>
+            <param name="token">RequestToken to upgrade.</param>
+            <param name="consumerKey">The consumer key.</param>
+            <param name="consumerSecret">The consumer secret.</param>
+            <param name="sigMethod">The signature signing method.</param>
+            <param name="mode">The HTTP connection and argument format to use.</param>
+            <param name="rsaCert">The X509 certificate containing the private key used for RSA-SHA1.</param>
+            <returns>A populated AccessToken.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.TokenArgs(System.Uri,System.Collections.Specialized.NameValueCollection,System.String,System.String,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,ExtremeSwank.OAuth.SignatureMethod,System.String)">
+            <summary>
+            Generate arguments for Token requests.
+            </summary>
+            <remarks>
+            For Request tokens, leave tokenName and tokenSecret as null.
+            For Accept tokens, leave args as null.
+            </remarks>
+            <param name="uri">Token operation URL.</param>
+            <param name="postArgs">HTTP POST arguments to include in signature generation.</param>
+            <param name="consumerKey">The consumer key.</param>
+            <param name="consumerSecret">The consumer secret.</param>
+            <param name="tokenName">The token key, if required.</param>
+            <param name="tokenSecret">The token secret, if required.</param>
+            <param name="sigMethod">Signature generation method.</param>
+            <param name="method">HTTP method for the request.</param>
+            <param name="rsaCert">The X509 certificate containing the private key used for RSA-SHA1.</param>
+            <returns>All required arguments for the Token request.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetAuthParameters(System.Uri,ExtremeSwank.OAuth.AccessToken,System.Collections.Specialized.NameValueCollection,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,ExtremeSwank.OAuth.AuthenticationMethod,System.String,ExtremeSwank.OAuth.SignatureMethod)">
+            <summary>
+            Get authentication parameters to access an OAuth
+            protected resource.
+            </summary>
+            <param name="uri">Destination URL.</param>
+            <param name="token">Valid access token.</param>
+            <param name="arguments">Arguments to include in the request.</param>
+            <param name="consumerKey">The consumer key.</param>
+            <param name="consumerSecret">The consumer secret.</param>
+            <param name="format">The format of the resulting string.</param>
+            <param name="method">HTTP method that will be used during the request.</param>
+            <param name="sigMethod">Signature signing method.</param>
+            <param name="rsaCert">The X509 certificate containing the private key used for RSA-SHA1.</param>
+            <returns>String containing all authentication parameters, in the specified format.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.GetAuthParameters(System.Uri,System.String,System.Collections.Specialized.NameValueCollection,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,ExtremeSwank.OAuth.AuthenticationMethod,System.String,ExtremeSwank.OAuth.SignatureMethod)">
+            <summary>
+            Get authentication parameters to access an OAuth
+            protected resource.  Used for two-legged OAuth.
+            </summary>
+            <param name="uri">Destination URL.</param>
+            <param name="requestorId">Name of the user account at the remote site.</param>
+            <param name="arguments">Arguments to include in the request.</param>
+            <param name="consumerKey">The consumer key.</param>
+            <param name="consumerSecret">The consumer secret.</param>
+            <param name="format">The format of the resulting string.</param>
+            <param name="method">HTTP method that will be used during the request.</param>
+            <param name="rsaCert">The X509 certificate containing the private key used for RSA-SHA1.</param>
+            <param name="sigMethod">Signature signing method.</param>
+            <returns>String containing all authentication parameters, in the specified format.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.Request(System.Uri,System.Collections.Specialized.NameValueCollection,ExtremeSwank.OAuth.AuthenticationMethod)">
+            <summary>
+            Perform an HTTP request with OAuth authentication arguments.
+            </summary>
+            <remarks>
+            Used for Token requests.
+            </remarks>
+            <param name="uri">Destination URL.</param>
+            <param name="oauthArguments">Arguments to include in the OAuth authentication data.</param>
+            <param name="format">The required OAuth argument format.</param>
+            <returns>The resulting WebResponse object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.Nonce(System.Int64)">
+            <summary>
+            Generates a nonce value.
+            </summary>
+            <param name="input">64-bit integer representing the number of seconds since the epoch.</param>
+            <returns>A hexadecimal-encoded randomly generated value.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthClient.FormatResponse(System.Net.WebResponse)">
+            <summary>
+            Extracts all arguments from a WebResponse and builds
+            a NameValueCollection.
+            </summary>
+            <param name="response">Input web response.</param>
+            <returns>Populated NameValueCollection containing all arguments.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthClient.ConsumerKey">
+            <summary>
+            The OAuth Consumer Key provided by the service provider.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthClient.ConsumerSecret">
+            <summary>
+            The OAuth Consumer Secret privided by the service provider.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthClient.SignatureType">
+            <summary>
+            The signature signing method that will be used.
+            </summary>
+            <remarks>
+            HMAC-SHA1, RSA-SHA1, and PLAINTEXT are standard signature 
+            formats supported by OAuth 1.0.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthClient.TokenRequestFormat">
+            <summary>
+            The HTTP request method and authentication arugment
+            format that will be used to request tokens
+            from the service provider.
+            </summary>
+            <remarks>
+            Arguments will be placed in the HTTP Header by default.
+            Other options are A) passing via querystring using an HTTP GET request,
+            or B) passing via the body of an HTTP POST request.  Only applies
+            when performing token operations.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthClient.RequestTokenUrl">
+            <summary>
+            The URL where Request Tokens can be requested.
+            </summary>
+            <remarks>
+            This is provided by the OAuth Service Provider.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthClient.AuthorizeTokenUrl">
+            <summary>
+            The URL where a user will be directed to authorize tokens.
+            </summary>
+            <remarks>
+            This is provided by the OAuth Service Provider.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthClient.AccessTokenUrl">
+            <summary>
+            The URL where Request Tokens can be upgraded to Access Tokens.
+            </summary>
+            <remarks>
+            This is provided by the OAuth Service Provider.
+            </remarks>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthClient.RsaCertificate">
+            <summary>
+            The X509 certificate containing the private key used for the RSA-SHA1 signing method.
+            Optional for other signing methods.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthIdentity">
+            <summary>
+            OAuth-compatible IIdentity object.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthPrincipal">
+            <summary>
+            OAuth-specific security principal, representing a single
+            user and membership roles.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthPrincipal.#ctor(System.String,System.String[])">
+            <summary>
+            Creates a new instance of OAuthPrincipal.
+            </summary>
+            <param name="name">Name of the user account.</param>
+            <param name="scope">Scope of the credentials.  A list of site-specific operations that these credentials can perform.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthPrincipal.Scope">
+            <summary>
+            The scope of the credentials. A list of site-specific operations that these credentials can perform.
+            </summary>
+            <returns>A string array of custom operations.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthPrincipal.IsInRole(System.String)">
+            <summary>
+            Checks the Roles provider to see if the account is in a given role.
+            Always returns "true" if "OAuthUser" is specified.
+            </summary>
+            <param name="role">Role to check.</param>
+            <returns>True if the account is in the role, false if not.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthPrincipal.Identity">
+            <summary>
+            The identity object representing this user account.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthHttpModule">
+            <summary>
+            OAuth HttpModule for ASP.NET server-side authentication integration.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthHttpModule.Dispose">
+            <summary>
+            Dispose any unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthHttpModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Initializes the HttpModule.
+            </summary>
+            <param name="context">The current ASP.NET application.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthHttpModule.context_PreSendRequestHeaders(System.Object,System.EventArgs)">
+            <summary>
+            If the current request results in an authentication failure, 
+            send the OAuth authentication challenge in the HTTP headers.
+            </summary>
+            <param name="sender">The current HttpApplication.</param>
+            <param name="e">Associated event arguments.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthHttpModule.context_AuthenticateRequest(System.Object,System.EventArgs)">
+            <summary>
+            Performs authentication on an OAuth authentication request, if the OAuth response
+            is in the request's HTTP headers.
+            </summary>
+            <param name="sender">The current HttpApplication.</param>
+            <param name="e">Associated event arguments.</param>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthUtility">
+            <summary>
+            Shared utility methods between OAuth client and server implementations.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.Serialize``1(``0)">
+            <summary>
+            Serialize an object to a string.
+            </summary>
+            <typeparam name="T">The type of the object.</typeparam>
+            <param name="input">The object to serialize.</param>
+            <returns>A string representing the object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.Deserialize``1(System.String)">
+            <summary>
+            Convert previously serialized object data back into an object. 
+            </summary>
+            <typeparam name="T">The type of the object.</typeparam>
+            <param name="input">The input data.</param>
+            <returns>A populated object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.StringToSigMethod(System.String)">
+            <summary>
+            Translate SignatureMethod value into a protcol-compatible string.
+            </summary>
+            <param name="sigMethod">The value to translate.</param>
+            <returns>A string representing the input value.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.SigMethodToString(ExtremeSwank.OAuth.SignatureMethod)">
+            <summary>
+            Convert a SignatureMethod to a OAuth-compatible
+            string representation.
+            </summary>
+            <param name="method">Input value.</param>
+            <returns>String in OAuth-compatible format.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.BaseUrl(System.Uri)">
+            <summary>
+            Strip all arguments from a URI.
+            </summary>
+            <param name="uri">URI to process.</param>
+            <returns>A URI with no query arguments or fragments.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.GenerateBaseString(System.Uri,System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            Generate an OAuth Base String for signing.
+            </summary>
+            <param name="uri">URL for the request.</param>
+            <param name="args">Arguments to include in the string.</param>
+            <param name="method">HTTP request method.</param>
+            <returns>A combined base string, per the OAuth specification.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.UrlEncode(System.String)">
+            <summary>
+            Perform URL Encoding on a string per the OAuth specification.
+            </summary>
+            <remarks>
+            OAuth specification is more rigid than standard URL encoding.
+            For instance, all hexadecimal character codes must be in all
+            upper-case.
+            </remarks>
+            <param name="str">Input string.</param>
+            <returns>URL Encoded string.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.GenerateSignature(System.String,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,ExtremeSwank.OAuth.SignatureMethod)">
+            <summary>
+            Generate an OAuth-compliant signature.
+            </summary>
+            <param name="text">Input test.</param>
+            <param name="consumerSecret">The consumer secret.</param>
+            <param name="tokenSecret">The Token secret.</param>
+            <param name="sigMethod">The type of signature to generate.</param>
+            <param name="rsaCert">The X509 certificate containing the private key to be used with RSA-SHA1.</param>
+            <returns>An OAuth-compliant signature string.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.Realm(System.Uri)">
+            <summary>
+            Generate a valid Realm for a URI.
+            </summary>
+            <param name="uri">Input URI.</param>
+            <returns>A valid realm.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.Timestamp">
+            <summary>
+            Generates a timestamp representing the current time.
+            </summary>
+            <returns>64-bit integer representing the number of seconds since the epoch.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthUtility.ArgsToVal(System.Collections.Specialized.NameValueCollection,ExtremeSwank.OAuth.AuthenticationMethod)">
+            <summary>
+            Transforms all arguments in a NameValueCollection into a string.
+            </summary>
+            <param name="arguments">Arguments to process.</param>
+            <param name="format">The format of the return string.</param>
+            <returns>A formatted string containing all arguments.</returns>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.IServerTokenStore">
+            <summary>
+            Interface for server-side token and Consumer registration storage.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.IServerTokenStore.FindConsumerRegistration(System.String)">
+            <summary>
+            Get a Consumer Registration entry from storage.
+            </summary>
+            <param name="key">The key for the entry.</param>
+            <returns>A populated ConsumerRegistration object, or null if it cannot be found.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.IServerTokenStore.FindAccessToken(System.String)">
+            <summary>
+            Get an Access Token from storage.
+            </summary>
+            <param name="key">The key for the entry.</param>
+            <returns>A populated ServerAccessToken object, or null if it cannot be found.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.IServerTokenStore.FindRequestToken(System.String)">
+            <summary>
+            Get a Request Token from storage.
+            </summary>
+            <param name="key">The key for the entry.</param>
+            <returns>A populated ServerRequestToken object, or null if it cannot be found.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.IServerTokenStore.DeleteRequestToken(System.String)">
+            <summary>
+            Delete a RequestToken from storage.
+            </summary>
+            <param name="key">The key for the entry.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.IServerTokenStore.DeleteAccessToken(System.String)">
+            <summary>
+            Delete a AccessToken from storage.
+            </summary>
+            <param name="key">The key for the entry.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.IServerTokenStore.DeleteConsumerRegistration(System.String)">
+            <summary>
+            Delete a Consumer Registration entry from storage.
+            </summary>
+            <param name="key">The key for the entry.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.IServerTokenStore.StoreConsumerRegistration(ExtremeSwank.OAuth.ConsumerRegistration)">
+            <summary>
+            Save a Consumer Registration entry to storage.
+            </summary>
+            <param name="item">The item to store.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.IServerTokenStore.StoreAccessToken(ExtremeSwank.OAuth.ServerAccessToken)">
+            <summary>
+            Save an AccessToken to storage.
+            </summary>
+            <param name="item">The item to store.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.IServerTokenStore.StoreRequestToken(ExtremeSwank.OAuth.ServerRequestToken)">
+            <summary>
+            Save a RequestToken to storage.
+            </summary>
+            <param name="item">The item to store.</param>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.ApplicationServerTokenStore">
+            <summary>
+            Stores tokens in the current HttpApplication object.
+            Good for testing, not recommended for production use.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ApplicationServerTokenStore.FindConsumerRegistration(System.String)">
+            <summary>
+            Retrieve a stored ConsumerRegistration entry.
+            </summary>
+            <param name="key">Entry key.</param>
+            <returns>ConsumerRegistration object representing the stored entry.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ApplicationServerTokenStore.FindAccessToken(System.String)">
+            <summary>
+            Retrieve a stored AccessToken entry.
+            </summary>
+            <param name="key">Entry key.</param>
+            <returns>AccessToken object representing the stored entry.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ApplicationServerTokenStore.FindRequestToken(System.String)">
+            <summary>
+            Retrieve a stored RequestToken entry.
+            </summary>
+            <param name="key">Entry key.</param>
+            <returns>RequestToken object representing the stored entry.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ApplicationServerTokenStore.DeleteRequestToken(System.String)">
+            <summary>
+            Delete a stored RequestToken entry.
+            </summary>
+            <param name="key">Entry key.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ApplicationServerTokenStore.DeleteAccessToken(System.String)">
+            <summary>
+            Delete a stored AccessToken entry.
+            </summary>
+            <param name="key">Entry key.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ApplicationServerTokenStore.DeleteConsumerRegistration(System.String)">
+            <summary>
+            Delete a stored ConsumerRegistration entry.
+            </summary>
+            <param name="key">Entry key.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ApplicationServerTokenStore.StoreAccessToken(ExtremeSwank.OAuth.ServerAccessToken)">
+            <summary>
+            Save a modified or new AccessToken entry.
+            </summary>
+            <param name="item">Item to save.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ApplicationServerTokenStore.StoreRequestToken(ExtremeSwank.OAuth.ServerRequestToken)">
+            <summary>
+            Save a modified or new RequestToken entry.
+            </summary>
+            <param name="item">Item to save.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ApplicationServerTokenStore.StoreConsumerRegistration(ExtremeSwank.OAuth.ConsumerRegistration)">
+            <summary>
+            Save a modified or new ConsumerRegistration entry.
+            </summary>
+            <param name="item">Item to save.</param>        
+        </member>
+        <member name="T:ExtremeSwank.OAuth.DBServerTokenStore">
+            <summary>
+            Stores tokens in a .NET compatible SQL database.
+            </summary>
+            <remarks>
+            Requires a single table with three varchar fields: Key (255), Type (255), and ObjectData (4000 or TEXT).
+            Indexes should be present on the Key and Type columns.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.SetupDB(System.Data.IDbConnection,System.String)">
+            <summary>
+            Create the table in the supplied database connection, using the supplied
+            table name.
+            </summary>
+            <param name="connection">Database connection to use.</param>
+            <param name="tableName">Name of the table to create.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.SetupDB">
+            <summary>
+            Read the configuration out of the web.config file and create the table
+            in the database.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.ConfigureDB">
+            <summary>
+            Create the table in the current database connection, using the current
+            table name.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.#ctor(System.Data.IDbConnection,System.String)">
+            <summary>
+            Creates a new instance of DBServerTokenStore.
+            </summary>
+            <param name="connection">The IDbConnection object representing a closed database connection.</param>
+            <param name="tableName">The name the table where token data is stored.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.#ctor">
+            <summary>
+            Creates a new instance of DBServerTokenStore, getting configuration
+            from the ASP.NET web.config file.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.GetConfiguredConnection">
+            <summary>
+            Get the configured database connection data from the web.config file.
+            </summary>
+            <returns>A configured IDbConnection object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.GetConfiguredTableName">
+            <summary>
+            Get the configured database table name from the web.config file.
+            </summary>
+            <returns>The configured table name.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.GetItem``1(System.String)">
+            <summary>
+            Generically get an item from the database based on its key and its type.
+            </summary>
+            <typeparam name="T">Type of the object to retrieve.</typeparam>
+            <param name="key">Key of the object.</param>
+            <returns>Retrieved object, if found.  Null if not found.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.SaveItem``1(System.String,``0)">
+            <summary>
+            Save an item to the database based on its key and its type.
+            </summary>
+            <typeparam name="T">Type of object to save.</typeparam>
+            <param name="key">Key of the object.</param>
+            <param name="item">The object to save.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.DeleteItem(System.String)">
+            <summary>
+            Delete an object from the database using its key.
+            </summary>
+            <param name="key">Key of the object.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.ToSql(System.String)">
+            <summary>
+            Replace any potentially dangerous characters with safer equivalents.
+            </summary>
+            <param name="sql">The input string.</param>
+            <returns>Sanitized output string.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.FromSql(System.String)">
+            <summary>
+            Convert a safe string back to its original value.
+            </summary>
+            <param name="sql">The input string.</param>
+            <returns>Restored output string.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.FindConsumerRegistration(System.String)">
+            <summary>
+            Retrieve a stored ConsumerRegistration entry.
+            </summary>
+            <param name="key">Entry key.</param>
+            <returns>ConsumerRegistration object representing the stored entry.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.FindAccessToken(System.String)">
+            <summary>
+            Retrieve a stored AccessToken entry.
+            </summary>
+            <param name="key">Entry key.</param>
+            <returns>AccessToken object representing the stored entry.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.FindRequestToken(System.String)">
+            <summary>
+            Retrieve a stored RequestToken entry.
+            </summary>
+            <param name="key">Entry key.</param>
+            <returns>RequestToken object representing the stored entry.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.DeleteRequestToken(System.String)">
+            <summary>
+            Delete a stored RequestToken entry.
+            </summary>
+            <param name="key">Entry key.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.DeleteAccessToken(System.String)">
+            <summary>
+            Delete a stored AccessToken entry.
+            </summary>
+            <param name="key">Entry key.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.DeleteConsumerRegistration(System.String)">
+            <summary>
+            Delete a stored ConsumerRegistration entry.
+            </summary>
+            <param name="key">Entry key.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.StoreAccessToken(ExtremeSwank.OAuth.ServerAccessToken)">
+            <summary>
+            Save a modified or new AccessToken entry.
+            </summary>
+            <param name="item">Item to save.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.StoreRequestToken(ExtremeSwank.OAuth.ServerRequestToken)">
+            <summary>
+            Save a modified or new RequestToken entry.
+            </summary>
+            <param name="item">Item to save.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.StoreConsumerRegistration(ExtremeSwank.OAuth.ConsumerRegistration)">
+            <summary>
+            Save a modified or new ConsumerRegistration entry.
+            </summary>
+            <param name="item">Item to save.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.Dispose">
+            <summary>
+            Clean up all used unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.DBServerTokenStore.Dispose(System.Boolean)">
+            <summary>
+            Implements proper Dispose pattern.
+            </summary>
+            <param name="disposing">True if ran by Dispose(), false if by the finalizer.</param>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthAuthenticationModule">
+            <summary>
+            Provides a module compatible with the .NET security framework.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthAuthenticationModule.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)">
+            <summary>
+            Return OAuth authentication data based on the supplied credentials.
+            </summary>
+            <param name="challenge">Authentication challenge</param>
+            <param name="request">Web request</param>
+            <param name="credentials">OAuth credentials object</param>
+            <returns>Populated Authorization object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthAuthenticationModule.PreAuthenticate(System.Net.WebRequest,System.Net.ICredentials)">
+            <summary>
+            Pre-authenticate the web request.
+            </summary>
+            <param name="request">Current web request.</param>
+            <param name="credentials">OAuthCredentials object.</param>
+            <returns>Populated Authorization object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthAuthenticationModule.Auth(System.Net.WebRequest,System.Net.ICredentials)">
+            <summary>
+            Authenticate the web request.
+            </summary>
+            <param name="request">Current web request.</param>
+            <param name="credentials">OAuthCredentials object.</param>
+            <returns>Populated Authorization object.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthAuthenticationModule.AuthenticationType">
+            <summary>
+            The authentication type.  Always returns "OAuth".
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.OAuthAuthenticationModule.CanPreAuthenticate">
+            <summary>
+            This module is able to perform pre-authentication.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.ServerRequestMode">
+            <summary>
+            OAuth mode for processing token requests.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.ServerRequestMode.RequestToken">
+            <summary>
+            Current request is for a Request Token.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.ServerRequestMode.AccessToken">
+            <summary>
+            Current request is for an Access Token.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.OAuthServer">
+            <summary>
+            Server-side OAuth 1.0 implementation.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.PemToCertificate(System.String)">
+            <summary>
+            Convert a public certificate in PEM text blob format to an
+            X509 certificate.
+            </summary>
+            <param name="input">String containing public certificate in PEM format.</param>
+            <returns>A populated X509 certificate.s</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.GetConfiguredStorageProvider">
+            <summary>
+            Get the configured Token Storage provider from the current web.config file.
+            Should only be used in ASP.NET environments.
+            </summary>
+            <returns>Configured Token Storage provider.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.GenerateRandomValue">
+            <summary>
+            Generate a psuedo-random string value (SHA-256 hash).
+            </summary>
+            <returns>A pseudo-random value.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.AuthenticateUser(System.Web.HttpRequest,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Authenticate a user HTTP Request.
+            </summary>
+            <param name="request">HttpRequest to authenticate.</param>
+            <param name="store">Token storage object to use.</param>
+            <returns>If valid, returns the matching ServerAccessToken.  If not valid, returns null.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.AuthenticateUser(System.Net.HttpListenerRequest,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Authenticate a user HTTP Request.
+            </summary>
+            <param name="request">HttpRequest to authenticate.</param>
+            <param name="store">Token storage object to use.</param>
+            <returns>If valid, returns the matching ServerAccessToken.  If not valid, returns null.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.AuthenticateUser(System.Uri,System.String,System.Collections.Specialized.NameValueCollection,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Authenticate a user given raw request arguments.
+            </summary>
+            <param name="uri">The URI of the resource.</param>
+            <param name="requestMethod">The request method used.</param>
+            <param name="arguments">The arugments in the request.</param>
+            <param name="store">The Token Storage Provider.</param>
+            <returns>If valid, returns the matching ServerAccessToken.  If not valid, returns null.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.BuildAndStoreRequestToken(System.String,System.Collections.Specialized.NameValueCollection,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Create a new Request Token using the given arguments, and store it using the supplied
+            token storage.
+            </summary>
+            <param name="consumerKey">Key of the consumer that is making the request.</param>
+            <param name="parameters">Additional parameters that will be stored in the Request Token.</param>
+            <param name="store">Token storage provider.</param>
+            <returns>A new ServerRequestToken.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.AuthorizeRequestToken(System.String,System.String,System.String[],ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Authorize a Request Token, thereby generating an associated Access Token.
+            </summary>
+            <param name="requestTokenKey">Key of the request token.</param>
+            <param name="userAccount">The associated user account.</param>
+            <param name="approvedScope">The optional scope parameters.</param>
+            <param name="store">Token storage object to use.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.RetrieveAccessTokenUsingRequestToken(System.String,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Using the provided Request Token, retrieve the associated Access Token,
+            if one has been authorized.
+            </summary>
+            <param name="requestTokenKey">The key of the Request Token.</param>
+            <param name="store">Token storage provider.</param>
+            <returns>If the Access Token is valid, returns the token.  If not, returns null.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.HandleTokenRequest(System.Web.HttpRequest,System.Web.HttpResponse,ExtremeSwank.OAuth.ServerRequestMode,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Process and respond to a token request using HttpRequest and HttpResponse objects.
+            </summary>
+            <param name="request">Request to process.</param>
+            <param name="response">Response object to respond with.</param>
+            <param name="mode">Token request mode.</param>
+            <param name="store">Token storage object.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.HandleTokenRequest(System.Net.HttpListenerRequest,System.Net.HttpListenerResponse,ExtremeSwank.OAuth.ServerRequestMode,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Process and respond to a token request using HttpListenerRequest and HttpListenerResponse objects.
+            </summary>
+            <param name="request">Request to process.</param>
+            <param name="response">Response object to respond with.</param>
+            <param name="mode">Token request mode.</param>
+            <param name="store">Token storage object.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.HandleHttpTokenRequest(ExtremeSwank.OAuth.AbstractRequest,ExtremeSwank.OAuth.AbstractResponse,ExtremeSwank.OAuth.ServerRequestMode,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Abstract method to handle token requests.
+            </summary>
+            <param name="request">Abstracted HTTP request object.</param>
+            <param name="response">Abstracted HTTP response object.</param>
+            <param name="mode">Token request mode.</param>
+            <param name="store">Token storage provider.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.HandleTokenRequest(ExtremeSwank.OAuth.ServerRequestMode,System.Uri,System.String,System.Collections.Specialized.NameValueCollection,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Handle a token request using raw request arguments.
+            </summary>
+            <param name="mode">The request OAuth mode for processing token requests.</param>
+            <param name="uri">The URI of the resource.</param>
+            <param name="requestMethod">The request method used.</param>
+            <param name="arguments">The arguments in the request.</param>
+            <param name="store">The Token Storage Provider.</param>
+            <returns>A processing result object that contains all the important result data.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.DecodeRequest(ExtremeSwank.OAuth.AbstractRequest)">
+            <summary>
+            Given an abstracted HTTP request object, extract all OAuth parameters and return the arguments.
+            </summary>
+            <param name="request">The abstracted HTTP request object.</param>
+            <returns>A populated collection of OAuth parameters in the request.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.CheckRequest(ExtremeSwank.OAuth.ServerRequestMode,System.Uri,System.String,System.Collections.Specialized.NameValueCollection,ExtremeSwank.OAuth.IServerTokenStore)">
+            <summary>
+            Perform complete validation of the OAuth request and return a comprehensive result.
+            </summary>
+            <param name="requestMode">Desired token request mode.</param>
+            <param name="uri">URI of the resource.</param>
+            <param name="httpMethod">Request method.</param>
+            <param name="arguments">Arguments in the request.</param>
+            <param name="store">The Token Storage Provider.</param>
+            <returns>A populated CheckResult object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.IsSupportedVersion(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Checks to ensure the request is for a supported version.
+            </summary>
+            <param name="arguments">Request arguments.</param>
+            <returns>True if supported, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.HasRequiredArguments(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Checks to ensure all the required arguments for OAuth are
+            present.
+            </summary>
+            <param name="arguments">Request arguments.</param>
+            <returns>True if all are present, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.HasOnlySingleArguments(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Checks to ensure all OAuth parameters only contain single arguments.
+            </summary>
+            <param name="arguments">Request arguments.</param>
+            <returns>True if valid, false if invalid.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.IsValidSignature(System.Uri,System.String,System.Collections.Specialized.NameValueCollection,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Confirms the validity of the OAuth request signature.
+            </summary>
+            <param name="uri">URI of the resource.</param>
+            <param name="httpMethod">Request method.</param>
+            <param name="arguments">Request arguments.</param>
+            <param name="consumerSecret">Consumer secret.</param>
+            <param name="tokenSecret">Token secret.</param>
+            <param name="rsaCert">For RSA-SHA1 signing, the X509 certificate containing the public key used to verify the signature.</param>
+            <returns>True if the signature is valid, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.IsValidTimestamp(System.String)">
+            <summary>
+            Checks to ensure that the received timestamp is plus or minus 30 seconds from
+            the current server's time.
+            </summary>
+            <param name="timestamp">Received timestamp.</param>
+            <returns>True if valid, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.IsValidNonce(System.String,System.String)">
+            <summary>
+            Checks to ensure that the received nonce has not been received before.
+            </summary>
+            <param name="consumerKey">Consumer key.</param>
+            <param name="nonce">Received nonce.</param>
+            <returns>True if check has passed, false if not.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.OAuthServer.FailureTypeToString(ExtremeSwank.OAuth.FailureSpecificType)">
+            <summary>
+            Translate a FailureSpecificType to a description string.
+            </summary>
+            <param name="ftype">Input value.</param>
+            <returns>A descriptive string.</returns>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.FailureGenericType">
+            <summary>
+            High-level failure categories.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.FailureSpecificType">
+            <summary>
+            Specific failure types.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.CheckResult">
+            <summary>
+            Comprehensive request validation result data.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.CheckResult.#ctor(System.Boolean,System.String,ExtremeSwank.OAuth.FailureGenericType,ExtremeSwank.OAuth.FailureSpecificType)">
+            <summary>
+            Create a new CheckResult.
+            </summary>
+            <param name="success">Whether or not all checks have passed.</param>
+            <param name="failReason">The descriptive reason for the failure.</param>
+            <param name="gFailType">Generic failure condition.</param>
+            <param name="sFailType">Specific failure condition.</param>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.CheckResult.Success">
+            <summary>
+            Whether or not all checks had passed.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.CheckResult.FailReason">
+            <summary>
+            The descriptive string speaking to the error condition that occurred, if any.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.CheckResult.FailSpecificCondition">
+            <summary>
+            The specific failure condition.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.CheckResult.FailGenericCondition">
+            <summary>
+            The high-level category of the failure condition.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.CheckResult.Consumer">
+            <summary>
+            If a valid request, the ConsumerRegistration object that is appropriate for this request.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.CheckResult.AccessToken">
+            <summary>
+            If a valid request, the AccessToken object that is appropriate for this request.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.TokenProcessingResult">
+            <summary>
+            High-level result from a token processing operation.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.TokenProcessingResult.#ctor(System.Boolean,System.String,ExtremeSwank.OAuth.FailureGenericType,ExtremeSwank.OAuth.FailureSpecificType)">
+            <summary>
+            Create a new instance.
+            </summary>
+            <param name="success">Whether or not the operation was successful.</param>
+            <param name="failReason">The descriptive reason for the failure.</param>
+            <param name="gFailType">The generic failure condition.</param>
+            <param name="sFailType">The specific failue condition.</param>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.TokenProcessingResult.Success">
+            <summary>
+            Whether or not the operation was successful.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.TokenProcessingResult.FailReason">
+            <summary>
+            The descriptive reason for the failure, if any.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.TokenProcessingResult.FailGenericCondition">
+            <summary>
+            The high-level failure category.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.TokenProcessingResult.FailSpecificCondition">
+            <summary>
+            The specific failure condition.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.TokenProcessingResult.ResponseArguments">
+            <summary>
+            For successful operations, the response arguments that should be passed back to the requestor.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.ConsumerRegistration">
+            <summary>
+            Represents an OAuth consumer that is registered with the OAuth service provider.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ConsumerRegistration.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Creates a new instance of ConsumerRegistration.
+            </summary>
+            <param name="consumerKey">Key for the Consumer.  Typically the registered FQDN, or an account name.</param>
+            <param name="consumerSecret">A unique, randomized value.  Use OAuthServer.GenerateRandomValue() to ensure the value is secure.</param>
+            <param name="rsaCertificate">The X509 certificate that will be used with RSA-SHA1 signature verification.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ConsumerRegistration.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new instance of ConsumerRegistration.
+            </summary>
+            <param name="consumerKey">Key for the Consumer.  Typically the registered FQDN, or an account name.</param>
+            <param name="consumerSecret">A unique, randomized value.  Use OAuthServer.GenerateRandomValue() to ensure the value is secure.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ConsumerRegistration.Restore(System.String)">
+            <summary>
+            Re-build a ConsumerRegistration object using
+            serialized data from the object's Export method.
+            </summary>
+            <param name="objectData">The serialized object data.</param>
+            <returns>The specifed token object.</returns>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.ConsumerRegistration.Export">
+            <summary>
+            Serialize the object to a string that can be used
+            to restore the object at a later time.
+            </summary>
+            <returns>The serialized object data.</returns>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.ConsumerRegistration.ConsumerKey">
+            <summary>
+            Key for the Consumer.  Typically the registered FQDN, or an account name.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.ConsumerRegistration.ConsumerSecret">
+            <summary>
+            A unique, randomized value.  Use OAuthServer.GenerateRandomValue() to ensure
+            the value is secure.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.ConsumerRegistration.RsaCertificate">
+            <summary>
+            The X509 certificate containing the public key to be used for RSA-SHA1 signature verification.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.SignatureMethod">
+            <summary>
+            Method used for signing an OAuth request.
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.SignatureMethod.HmacSha1">
+            <summary>
+            HMAC-SHA1
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.SignatureMethod.HmacSha256">
+            <summary>
+            HMAC-SHA256. Not present in the OAuth 1.0 specification.
+            </summary>
+            <remarks>
+            Provided for convenience when building custom applications.
+            </remarks>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.SignatureMethod.HmacSha512">
+            <summary>
+            HMAC-SHA512. Not present in the OAuth 1.0 specification.
+            </summary>
+            <remarks>
+            Provided for convenience when building custom applications.
+            </remarks>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.SignatureMethod.RsaSha1">
+            <summary>
+            RSA-SHA1
+            </summary>
+        </member>
+        <member name="F:ExtremeSwank.OAuth.SignatureMethod.Plaintext">
+            <summary>
+            PLAINTEXT
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.TokenNotFoundException">
+            <summary>
+            The requested token could not be found.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.TokenNotFoundException.#ctor">
+            <summary>
+            The requested OAuth token could not be found.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.TokenNotFoundException.#ctor(System.String)">
+            <summary>
+            The requested OAuth token could not be found.
+            </summary>
+            <param name="message">Exception message.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.TokenNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            The requested OAuth token could not be found.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="exception">Inner exception.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.TokenNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            The requested OAuth token could not be found.
+            </summary>
+            <param name="info">Serialization info.</param>
+            <param name="context">Serialization context.</param>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.TokenAlreadyAuthorizedException">
+            <summary>
+            The token authorization request failed because the token
+            has already been authorized.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.TokenAlreadyAuthorizedException.#ctor">
+            <summary>
+            The token authorization request failed because the token
+            has already been authorized.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.TokenAlreadyAuthorizedException.#ctor(System.String)">
+            <summary>
+            The token authorization request failed because the token
+            has already been authorized.
+            </summary>
+            <param name="message">Exception message.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.TokenAlreadyAuthorizedException.#ctor(System.String,System.Exception)">
+            <summary>
+            The token authorization request failed because the token
+            has already been authorized.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="exception">Inner exception.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.TokenAlreadyAuthorizedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            The token authorization request failed because the token
+            has already been authorized.
+            </summary>
+            <param name="info">Serialization info.</param>
+            <param name="context">Serialization context.</param>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.RequiredPropertyNotSetException">
+            <summary>
+            A required property has not been set.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.RequiredPropertyNotSetException.#ctor">
+            <summary>
+            A required property has not been set.
+            </summary>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.RequiredPropertyNotSetException.#ctor(System.String)">
+            <summary>
+            A required property has not been set.
+            </summary>
+            <param name="message">Exception message.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.RequiredPropertyNotSetException.#ctor(System.String,System.Exception)">
+            <summary>
+            A required property has not been set.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="exception">Inner exception.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.RequiredPropertyNotSetException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            A required property has not been set.
+            </summary>
+            <param name="info">Serialization info.</param>
+            <param name="context">Serialization context.</param>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.AbstractWrapper">
+            <summary>
+            Abstracted wrapper class
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.AbstractRequest">
+            <summary>
+            Abstracted HTTP Request object.
+            </summary>
+            <remarks>
+            Since HttpListenerRequest and HttpRequest do not inherit from 
+            the same base class, and there is no duck typing in C# 3.0, we need
+            to create an abstraction so we don't have to write a separate code
+            path for both options.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.AbstractRequest.#ctor(System.Web.HttpRequest)">
+            <summary>
+            Create a new instance using an HttpRequest object.
+            </summary>
+            <param name="request">The current HTTP request.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.AbstractRequest.#ctor(System.Net.HttpListenerRequest)">
+            <summary>
+            Create a new instance using an HttpListenerRequest object.
+            </summary>
+            <param name="request">The current HTTP request.</param>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.AbstractRequest.QueryString">
+            <summary>
+            QueryString parameters in the request.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.AbstractRequest.Form">
+            <summary>
+            Parameters in the POST body of the request.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.AbstractRequest.Headers">
+            <summary>
+            HTTP Headers.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.AbstractRequest.HttpMethod">
+            <summary>
+            HTTP request method.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.AbstractRequest.Url">
+            <summary>
+            Resource URI.
+            </summary>
+        </member>
+        <member name="T:ExtremeSwank.OAuth.AbstractResponse">
+            <summary>
+            Abstracted HTTP Response object.
+            </summary>
+            <remarks>
+            Since HttpListenerResponse and HttpResponse do not inherit from 
+            the same base class, and there is no duck typing in C# 3.0, we need
+            to create an abstraction so we don't have to write a separate code
+            path for both options.
+            </remarks>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.AbstractResponse.#ctor(System.Web.HttpResponse)">
+            <summary>
+            Create a new instance using an HttpResponse.
+            </summary>
+            <param name="response">The current HTTP response.</param>
+        </member>
+        <member name="M:ExtremeSwank.OAuth.AbstractResponse.#ctor(System.Net.HttpListenerResponse)">
+            <summary>
+            Create a new instance using an HttpListenerResponse.
+            </summary>
+            <param name="response">The current HTTP response.</param>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.AbstractResponse.StatusCode">
+            <summary>
+            Set the response status code.
+            </summary>
+        </member>
+        <member name="P:ExtremeSwank.OAuth.AbstractResponse.OutputStream">
+            <summary>
+            Get the response output stream.
+            </summary>
+        </member>
+    </members>
+</doc>
